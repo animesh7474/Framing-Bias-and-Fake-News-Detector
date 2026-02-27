@@ -1,0 +1,12 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+app.log
+security_log.json
+framing_bias_model.pkl
+model_comparison_results.csv
+dataset.csv
+*~
+*.swp

@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  api:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./reports:/app/reports
+      - ./security_log.json:/app/security_log.json
+    environment:
+      - LOG_LEVEL=INFO
+    restart: unless-stopped

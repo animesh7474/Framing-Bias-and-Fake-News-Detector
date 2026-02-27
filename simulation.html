@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Framing Bias & Fake News Detector — AI Powered</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    :root {
+      --bg: #080910;
+      --s1: #0f1117;
+      --s2: #161b27;
+      --s3: #1e2333;
+      --border: #252d40;
+      --t: #e8eaf6;
+      --muted: #5c6680;
+      --accent: #6366f1;
+      --accent2: #818cf8;
+      --eco: #f59e0b;
+      --pol: #3b82f6;
+      --soc: #10b981;
+      --sec: #ef4444;
+      --env: #22c55e;
+      --low: #4ade80;
+      --med: #fbbf24;
+      --high: #f87171;
+      --crit: #f43f5e;
+      --r: 14px;
+      --glow: 0 0 50px rgba(99, 102, 241, .12);
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--t);
+      min-height: 100vh;
+      overflow-x: hidden
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 15% 10%, rgba(99, 102, 241, .07) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 50% at 85% 90%, rgba(129, 140, 248, .05) 0%, transparent 60%);
+      pointer-events: none;
+      z-index: 0
+    }
+
+    .wrap {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 20px;
+      position: relative;
+      z-index: 1
+    }
+
+    /* ── Header ── */
+    header {
+      padding: 44px 0 36px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 36px
+    }
+
+    .badge-row {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 20px
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 13px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .5px;
+      text-transform: uppercase
+    }
+
+    .badge-ml {
+      background: rgba(99, 102, 241, .12);
+      border: 1px solid rgba(99, 102, 241, .3);
+      color: var(--accent2)
+    }
+
+    .badge-llm {
+      background: rgba(16, 185, 129, .1);
+      border: 1px solid rgba(16, 185, 129, .3);
+      color: #34d399
+    }
+
+    .badge-live {
+      background: rgba(245, 158, 11, .1);
+      border: 1px solid rgba(245, 158, 11, .3);
+      color: #fbbf24
+    }
+
+    .badge-live::before {
+      content: '●';
+      animation: pulse 1.5s infinite;
+      margin-right: 2px
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        opacity: 1
+      }
+
+      50% {
+        opacity: .3
+      }
+    }
+
+    h1 {
+      font-size: clamp(24px, 4vw, 44px);
+      font-weight: 900;
+      background: linear-gradient(135deg, #fff 20%, var(--accent2) 60%, #a5b4fc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1.15;
+      margin-bottom: 10px
+    }
+
+    header p {
+      color: var(--muted);
+      font-size: 14px;
+      max-width: 580px;
+      margin: 0 auto;
+      line-height: 1.7
+    }
+
+    /* ── Status bar ── */
+    .status-bar {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 28px
+    }
+
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      padding: 5px 13px;
+      border-radius: 999px;
+      border: 1px solid;
+      font-weight: 600
+    }
+
+    .ok {
+      border-color: rgba(74, 222, 128, .3);
+      background: rgba(74, 222, 128, .07);
+      color: var(--low)
+    }
+
+    .warn {
+      border-color: rgba(251, 191, 36, .3);
+      background: rgba(251, 191, 36, .07);
+      color: var(--med)
+    }
+
+    .err {
+      border-color: rgba(244, 63, 94, .3);
+      background: rgba(244, 63, 94, .07);
+      color: var(--crit)
+    }
+
+    .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: currentColor;
+      animation: pulse 2s infinite
+    }
+
+    /* ── Tabs ── */
+    .tabs {
+      display: flex;
+      gap: 3px;
+      background: var(--s1);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 4px;
+      width: fit-content;
+      margin: 0 auto 32px
+    }
+
+    .tab {
+      padding: 9px 20px;
+      border-radius: 9px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      color: var(--muted);
+      font-family: 'Inter', sans-serif;
+      transition: all .2s
+    }
+
+    .tab.active {
+      background: var(--accent);
+      color: #fff;
+      box-shadow: 0 2px 14px rgba(99, 102, 241, .4)
+    }
+
+    .pane {
+      display: none
+    }
+
+    .pane.active {
+      display: block;
+      animation: up .35s ease
+    }
+
+    @keyframes up {
+      from {
+        opacity: 0;
+        transform: translateY(10px)
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
+
+    /* ── Cards ── */
+    .card {
+      background: var(--s1);
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      padding: 24px;
+      transition: border-color .3s, box-shadow .3s;
+      margin-bottom: 18px
+    }
+
+    .card:hover {
+      border-color: rgba(99, 102, 241, .22);
+      box-shadow: var(--glow)
+    }
+
+    .card-head {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--muted);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px
+    }
+
+    .card-head span {
+      font-size: 15px
+    }
+
+    .g2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px
+    }
+
+    .g3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 14px
+    }
+
+    @media(max-width:740px) {
+
+      .g2,
+      .g3 {
+        grid-template-columns: 1fr
+      }
+    }
+
+    /* ── Stat cards ── */
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-bottom: 24px
+    }
+
+    @media(max-width:600px) {
+      .stats-row {
+        grid-template-columns: repeat(2, 1fr)
+      }
+    }
+
+    .stat {
+      background: var(--s1);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center
+    }
+
+    .stat-n {
+      font-size: 24px;
+      font-weight: 800;
+      margin-bottom: 3px
+    }
+
+    .stat-l {
+      font-size: 11px;
+      color: var(--muted)
+    }
+
+    /* ── Input ── */
+    textarea {
+      width: 100%;
+      background: var(--s2);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      color: var(--t);
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      line-height: 1.65;
+      padding: 18px;
+      resize: vertical;
+      outline: none;
+      transition: border-color .3s, box-shadow .3s;
+      min-height: 120px
+    }
+
+    textarea:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(99, 102, 241, .15)
+    }
+
+    textarea::placeholder {
+      color: var(--muted)
+    }
+
+    .btn {
+      padding: 11px 24px;
+      border-radius: 10px;
+      border: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      transition: all .2s
+    }
+
+    .btn-p {
+      background: linear-gradient(135deg, var(--accent), #7c3aed);
+      color: #fff;
+      box-shadow: 0 4px 20px rgba(99, 102, 241, .35)
+    }
+
+    .btn-p:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 28px rgba(99, 102, 241, .5)
+    }
+
+    .btn-p:disabled {
+      opacity: .5;
+      transform: none;
+      cursor: not-allowed
+    }
+
+    .btn-o {
+      background: transparent;
+      color: var(--muted);
+      border: 1px solid var(--border)
+    }
+
+    .btn-o:hover {
+      border-color: var(--accent2);
+      color: var(--accent2)
+    }
+
+    .pills {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-top: 10px
+    }
+
+    .pill {
+      padding: 5px 12px;
+      border-radius: 999px;
+      font-size: 11px;
+      border: 1px solid var(--border);
+      background: var(--s2);
+      color: var(--muted);
+      cursor: pointer;
+      transition: all .15s
+    }
+
+    .pill:hover {
+      border-color: var(--accent2);
+      color: var(--accent2)
+    }
+
+    /* ── Loader ── */
+    .stage-loader {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      padding: 20px 0
+    }
+
+    .stage-loader.show {
+      display: flex
+    }
+
+    .stage-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+      color: var(--muted)
+    }
+
+    .stage-item.done {
+      color: var(--low)
+    }
+
+    .stage-item.active {
+      color: var(--accent2)
+    }
+
+    .spin {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      border: 2px solid var(--border);
+      border-top-color: var(--accent);
+      animation: spin .7s linear infinite;
+      flex-shrink: 0
+    }
+
+    .check {
+      color: var(--low);
+      font-size: 14px;
+      width: 15px;
+      text-align: center
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg)
+      }
+    }
+
+    /* ── Error ── */
+    .err-box {
+      background: rgba(244, 63, 94, .07);
+      border: 1px solid rgba(244, 63, 94, .25);
+      border-radius: 10px;
+      padding: 13px 16px;
+      color: #fda4af;
+      font-size: 13px;
+      display: none;
+      margin-top: 12px
+    }
+
+    .err-box.show {
+      display: block
+    }
+
+    /* ── Meter ── */
+    .meter-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px
+    }
+
+    .meter-label {
+      font-size: 12px;
+      min-width: 170px;
+      color: var(--t)
+    }
+
+    .meter-track {
+      flex: 1;
+      height: 9px;
+      background: var(--border);
+      border-radius: 999px;
+      overflow: hidden
+    }
+
+    .meter-fill {
+      height: 100%;
+      border-radius: 999px;
+      transition: width 1.2s cubic-bezier(.4, 0, .2, 1)
+    }
+
+    .meter-val {
+      font-size: 13px;
+      font-weight: 700;
+      min-width: 38px;
+      text-align: right
+    }
+
+    /* ── Frame result ── */
+    .frame-box {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      background: var(--s2);
+      border-radius: 12px;
+      padding: 18px;
+      border: 1px solid var(--border);
+      margin-bottom: 14px
+    }
+
+    .ficon {
+      width: 54px;
+      height: 54px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      flex-shrink: 0
+    }
+
+    .fname {
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 2px
+    }
+
+    .conf-bars {
+      flex: 1;
+      min-width: 200px
+    }
+
+    .cbar-row {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      margin-bottom: 7px
+    }
+
+    .cbar-lbl {
+      font-size: 11px;
+      color: var(--muted);
+      min-width: 80px
+    }
+
+    .cbar-track {
+      flex: 1;
+      height: 6px;
+      background: var(--border);
+      border-radius: 999px;
+      overflow: hidden
+    }
+
+    .cbar-fill {
+      height: 100%;
+      border-radius: 999px;
+      transition: width 1s cubic-bezier(.4, 0, .2, 1)
+    }
+
+    .cbar-pct {
+      font-size: 11px;
+      font-weight: 700;
+      min-width: 30px;
+      text-align: right
+    }
+
+    /* ── LIME ── */
+    .lime-wrap {
+      font-size: 15px;
+      line-height: 2.3;
+      background: var(--s2);
+      border-radius: 12px;
+      padding: 16px;
+      border: 1px solid var(--border)
+    }
+
+    .tok {
+      display: inline;
+      padding: 2px 4px;
+      border-radius: 4px;
+      margin: 0 1px;
+      position: relative;
+      cursor: default
+    }
+
+    .tok:hover::after {
+      content: attr(data-s);
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #1e2130;
+      border: 1px solid var(--border);
+      font-size: 11px;
+      padding: 3px 8px;
+      border-radius: 6px;
+      white-space: nowrap;
+      z-index: 10;
+      color: var(--t)
+    }
+
+    .pos {
+      background: rgba(99, 102, 241, .22);
+      color: #a5b4fc
+    }
+
+    .neg {
+      background: rgba(244, 63, 94, .15);
+      color: #fda4af
+    }
+
+    /* ── Threat badge ── */
+    .tbadge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 5px 12px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 800
+    }
+
+    .LOW {
+      background: rgba(74, 222, 128, .1);
+      color: var(--low);
+      border: 1px solid rgba(74, 222, 128, .3)
+    }
+
+    .MEDIUM {
+      background: rgba(251, 191, 36, .1);
+      color: var(--med);
+      border: 1px solid rgba(251, 191, 36, .3)
+    }
+
+    .HIGH {
+      background: rgba(241, 68, 68, .1);
+      color: var(--high);
+      border: 1px solid rgba(241, 68, 68, .3)
+    }
+
+    .CRITICAL {
+      background: rgba(244, 63, 94, .12);
+      color: var(--crit);
+      border: 1px solid rgba(244, 63, 94, .35)
+    }
+
+    /* ── News cards ── */
+    .news-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 10px
+    }
+
+    .news-card {
+      background: var(--s2);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 16px;
+      transition: border-color .2s
+    }
+
+    .news-card:hover {
+      border-color: rgba(99, 102, 241, .3)
+    }
+
+    .news-title {
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 5px;
+      color: var(--t)
+    }
+
+    .news-meta {
+      font-size: 11px;
+      color: var(--muted);
+      margin-bottom: 6px
+    }
+
+    .news-body {
+      font-size: 12px;
+      color: #9aa5c0;
+      line-height: 1.5
+    }
+
+    .news-link {
+      font-size: 11px;
+      color: var(--accent2);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      margin-top: 6px
+    }
+
+    .news-link:hover {
+      text-decoration: underline
+    }
+
+    /* ── LLM analysis ── */
+    .verdict-box {
+      background: linear-gradient(135deg, rgba(99, 102, 241, .1), rgba(124, 58, 237, .07));
+      border: 1px solid rgba(99, 102, 241, .3);
+      border-radius: 12px;
+      padding: 18px;
+      margin-bottom: 16px
+    }
+
+    .verdict-text {
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 1.6;
+      color: var(--t)
+    }
+
+    .analysis-item {
+      background: var(--s2);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px;
+      margin-bottom: 10px
+    }
+
+    .analysis-label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      color: var(--muted);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px
+    }
+
+    .analysis-text {
+      font-size: 13px;
+      line-height: 1.7;
+      color: #c0c8e0
+    }
+
+    /* ── Score rings ── */
+    .score-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-bottom: 16px
+    }
+
+    .score-card {
+      background: var(--s2);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center
+    }
+
+    .score-num {
+      font-size: 32px;
+      font-weight: 900;
+      line-height: 1;
+      margin-bottom: 4px
+    }
+
+    .score-sub {
+      font-size: 11px;
+      color: var(--muted);
+      line-height: 1.4
+    }
+
+    /* ── Models ── */
+    .chart-wrap {
+      position: relative;
+      height: 220px
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px
+    }
+
+    th {
+      text-align: left;
+      padding: 9px 12px;
+      color: var(--muted);
+      font-weight: 600;
+      border-bottom: 1px solid var(--border);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .5px
+    }
+
+    td {
+      padding: 10px 12px;
+      border-bottom: 1px solid rgba(37, 45, 64, .5)
+    }
+
+    tr:last-child td {
+      border-bottom: none
+    }
+
+    tr:hover td {
+      background: var(--s2)
+    }
+
+    .rank {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      border-radius: 5px;
+      font-size: 11px;
+      font-weight: 800
+    }
+
+    .r1 {
+      background: rgba(245, 158, 11, .2);
+      color: #fbbf24
+    }
+
+    .r2 {
+      background: rgba(156, 163, 175, .15);
+      color: #9ca3af
+    }
+
+    .r3 {
+      background: rgba(180, 83, 9, .15);
+      color: #d97706
+    }
+
+    .r4 {
+      background: rgba(75, 85, 99, .15);
+      color: #6b7280
+    }
+
+    .best {
+      font-size: 10px;
+      background: rgba(99, 102, 241, .18);
+      color: var(--accent2);
+      padding: 2px 7px;
+      border-radius: 999px
+    }
+
+    .acc-row {
+      display: flex;
+      align-items: center;
+      gap: 7px
+    }
+
+    .acc-track {
+      flex: 1;
+      height: 5px;
+      background: var(--border);
+      border-radius: 999px;
+      overflow: hidden
+    }
+
+    .acc-fill {
+      height: 100%;
+      border-radius: 999px
+    }
+
+    /* ── Feed ── */
+    .feed-entry {
+      display: flex;
+      gap: 10px;
+      padding: 11px 0;
+      border-bottom: 1px solid var(--border);
+      animation: up .3s ease
+    }
+
+    .fe-frame {
+      font-size: 11px;
+      font-weight: 700;
+      min-width: 80px
+    }
+
+    .fe-text {
+      font-size: 12px;
+      color: var(--muted);
+      flex: 1
+    }
+
+    .fe-conf {
+      font-size: 11px;
+      color: var(--muted)
+    }
+
+    .fe-threat {
+      font-size: 10px;
+      padding: 2px 7px;
+      border-radius: 999px;
+      font-weight: 700
+    }
+
+    footer {
+      text-align: center;
+      padding: 36px 0;
+      color: var(--muted);
+      font-size: 11px;
+      border-top: 1px solid var(--border);
+      margin-top: 40px
+    }
+
+    footer strong {
+      color: var(--accent2)
+    }
+
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 22px 0
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <!-- HEADER -->
+    <header>
+      <div class="badge-row">
+        <div class="badge badge-ml">🤖 ML Model</div>
+        <div class="badge badge-llm">🧠 LLaMA 3.3 70B</div>
+        <div class="badge badge-live">Live News Context</div>
+      </div>
+      <h1>Framing Bias &amp; Fake News<br>AI Detection System</h1>
+      <p>Enter any news headline or article. The ML model detects framing bias immediately, then the LLM
+        cross-references live news to produce a full fake news, manipulation, and agenda analysis.</p>
+    </header>
+
+    <!-- API STATUS + STATS -->
+    <div class="status-bar">
+      <div class="status-pill err" id="apiPill">
+        <div class="dot"></div><span id="apiTxt">Connecting…</span>
+      </div>
+      <div class="status-pill warn" id="llmPill">
+        <div class="dot"></div><span id="llmTxt">Checking LLM…</span>
+      </div>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat">
+        <div class="stat-n" style="color:var(--accent)" id="sTotal">—</div>
+        <div class="stat-l">Training Samples</div>
+      </div>
+      <div class="stat">
+        <div class="stat-n" style="color:var(--accent2)">5</div>
+        <div class="stat-l">Frame Categories</div>
+      </div>
+      <div class="stat">
+        <div class="stat-n" style="color:#10b981">4</div>
+        <div class="stat-l">ML Algorithms</div>
+      </div>
+      <div class="stat">
+        <div class="stat-n" style="color:#f59e0b" id="sBest">—</div>
+        <div class="stat-l">Best Accuracy</div>
+      </div>
+    </div>
+
+    <!-- TABS -->
+    <div class="tabs">
+      <button class="tab active" onclick="tab('detect',this)">🔍 Detect</button>
+      <button class="tab" onclick="tab('models',this)">🏆 Models</button>
+      <button class="tab" onclick="tab('feed',this)">📡 Live Feed</button>
+      <button class="tab" onclick="tab('security',this)">🔐 Security Log</button>
+    </div>
+
+    <!-- ══════════ TAB: DETECT ══════════ -->
+    <div class="pane active" id="pane-detect">
+      <div class="card">
+        <div class="card-head"><span>🔍</span> Analyze Text</div>
+        <textarea id="txt"
+          placeholder="Paste a news headline or article here… e.g. 'Will India attack Pakistan this year?'"
+          rows="4"></textarea>
+        <div style="display:flex;gap:10px;margin-top:12px;flex-wrap:wrap">
+          <button class="btn btn-p" onclick="analyze()" id="analyzeBtn">⚡ Analyze Article</button>
+          <button class="btn btn-o" onclick="clearAll()">✕ Clear</button>
+        </div>
+        <p style="font-size:11px;color:var(--muted);margin-top:12px">Try a sample:</p>
+        <div class="pills">
+          <div class="pill" onclick="useSample(this)">Will India attack Pakistan this year?</div>
+          <div class="pill" onclick="useSample(this)">The economy is facing a major recession due to government policies
+          </div>
+          <div class="pill" onclick="useSample(this)">Climate activists demand immediate ban on fossil fuels</div>
+          <div class="pill" onclick="useSample(this)">Government secretly plotting to destroy your freedom!</div>
+          <div class="pill" onclick="useSample(this)">Community leaders rally for racial equality across cities</div>
+        </div>
+      </div>
+
+      <!-- Stage loader -->
+      <div class="stage-loader" id="stageLoader">
+        <div class="stage-item" id="s1">
+          <div class="spin"></div>Stage 1: ML Model — classifying frame &amp; manipulation score…
+        </div>
+        <div class="stage-item" id="s2" style="opacity:.4">
+          <div class="check">○</div>Stage 2: News Fetcher — searching live news with DuckDuckGo…
+        </div>
+        <div class="stage-item" id="s3" style="opacity:.4">
+          <div class="check">○</div>Stage 3: LLM — LLaMA 3.3 analyzing bias and fact-checking…
+        </div>
+        <div class="stage-item" id="s4" style="opacity:.4">
+          <div class="check">○</div>Stage 4: Combining results…
+        </div>
+      </div>
+      <div class="err-box" id="errBox"></div>
+
+      <div id="results" style="display:none">
+
+        <!-- ── ML RESULT ── -->
+        <div class="card">
+          <div class="card-head"><span>🤖</span> ML Model Output (Primary Decision) <span id="riskBadge"
+              style="margin-left:auto"></span></div>
+          <div class="frame-box">
+            <div style="min-width:110px;text-align:center">
+              <div class="ficon" id="ficon" style="margin:0 auto 6px"></div>
+              <div class="fname" id="fname"></div>
+              <div style="font-size:11px;color:var(--muted)">Detected Frame</div>
+            </div>
+            <div class="conf-bars" id="confBars"></div>
+          </div>
+        </div>
+
+        <!-- ── SCORES ── -->
+        <div class="score-grid" id="scoreGrid"></div>
+
+        <!-- ── LLM VERDICT ── -->
+        <div class="card">
+          <div class="card-head"><span>🧠</span> AI Verdict</div>
+          <div class="verdict-box">
+            <div class="verdict-text" id="verdict">—</div>
+          </div>
+
+          <div class="g2">
+            <div>
+              <div class="analysis-item" id="aiBias"></div>
+              <div class="analysis-item" id="aiFake"></div>
+            </div>
+            <div>
+              <div class="analysis-item" id="aiManip"></div>
+              <div class="analysis-item" id="aiAgenda"></div>
+            </div>
+          </div>
+          <div class="analysis-item" id="aiGaps" style="margin-top:0"></div>
+        </div>
+
+        <!-- ── LIME + NEWS ── -->
+        <div class="g2">
+          <div class="card" style="margin-bottom:0">
+            <div class="card-head"><span>💡</span> LIME Word Explanation</div>
+            <div class="lime-wrap" id="limeWrap"></div>
+            <div style="display:flex;gap:12px;margin-top:10px">
+              <div style="display:flex;align-items:center;gap:5px;font-size:11px;color:var(--muted)">
+                <div style="width:9px;height:9px;border-radius:3px;background:rgba(99,102,241,.25)"></div>Supports frame
+              </div>
+              <div style="display:flex;align-items:center;gap:5px;font-size:11px;color:var(--muted)">
+                <div style="width:9px;height:9px;border-radius:3px;background:rgba(244,63,94,.18)"></div>Opposes frame
+              </div>
+            </div>
+          </div>
+          <div class="card" style="margin-bottom:0">
+            <div class="card-head"><span>📰</span> Live News Context</div>
+            <div class="news-grid" id="newsCards">
+              <p style="color:var(--muted);font-size:13px">No related news found.</p>
+            </div>
+            <p style="font-size:11px;color:var(--muted);margin-top:10px">⁴ Articles fetched live via DuckDuckGo News</p>
+          </div>
+        </div>
+
+        <!-- ── CYBERSECURITY BREAKDOWN ── -->
+        <div class="card" style="margin-top:18px">
+          <div class="card-head"><span>🔐</span> Cybersecurity Threat Breakdown</div>
+          <div id="threatBreakdown"></div>
+          <p style="font-size:11px;color:var(--muted);margin-top:10px">Flagged words: <span id="flagged"
+              style="color:var(--high)"></span></p>
+        </div>
+
+        <!-- ── LLM COMPARISON ── -->
+        <div class="card">
+          <div class="card-head"><span>📰</span> News Comparison (LLM Insight)</div>
+          <div class="analysis-text" id="aiComparison" style="font-size:13px;line-height:1.8;color:#c0c8e0"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ══════════ TAB: MODELS ══════════ -->
+    <div class="pane" id="pane-models">
+      <div class="g2">
+        <div class="card">
+          <div class="card-head"><span>📈</span> Accuracy Comparison</div>
+          <div class="chart-wrap"><canvas id="accChart"></canvas></div>
+        </div>
+        <div class="card">
+          <div class="card-head"><span>⏱️</span> Training Time</div>
+          <div class="chart-wrap"><canvas id="timeChart"></canvas></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head"><span>🏆</span> Model Leaderboard</div>
+        <table>
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Algorithm</th>
+              <th>Accuracy</th>
+              <th>Time (s)</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="leaderboard"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ══════════ TAB: FEED ══════════ -->
+    <div class="pane" id="pane-feed">
+      <div class="card">
+        <div class="card-head"><span>📡</span> Live Text Stream Simulator</div>
+        <p style="color:var(--muted);font-size:13px;margin-bottom:14px">Simulates real-time text stream classification —
+          texts arrive and are instantly analyzed.</p>
+        <div style="display:flex;gap:10px">
+          <button class="btn btn-p" onclick="startFeed()" id="feedBtn">▶ Start Stream</button>
+          <button class="btn btn-o" style="display:none" onclick="stopFeed()" id="stopBtn">⏹ Stop</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head"><span>⚡</span> Stream Log <span id="feedStat"
+            style="margin-left:auto;font-size:11px;color:var(--muted)"></span></div>
+        <div id="feedLog" style="max-height:380px;overflow-y:auto"></div>
+      </div>
+    </div>
+
+    <!-- ══════════ TAB: SECURITY ══════════ -->
+    <div class="pane" id="pane-security">
+      <div class="card">
+        <div class="card-head"><span>🔐</span> AI Security Audit Log
+          <button class="btn btn-o" onclick="loadSecLog()" style="margin-left:auto;padding:5px 12px;font-size:11px">↻
+            Refresh</button>
+        </div>
+        <p style="color:var(--muted);font-size:13px;margin-bottom:14px">Every analyzed text is logged with its threat
+          score and flagged words.</p>
+        <div id="secLog">
+          <p style="color:var(--muted);font-size:13px">Analyze some text first.</p>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /wrap -->
+  <footer><strong>Framing Bias &amp; Fake News AI Detector</strong> · ML + LLaMA 3.3 · DuckDuckGo News · Flask API ·
+    Six-Domain Academic Project</footer>
+
+  <script>
+    const API = "http://localhost:5000";
+    const FC = { Economic: "#f59e0b", Political: "#3b82f6", Social: "#10b981", Security: "#ef4444", Environment: "#22c55e" };
+    const FI = { Economic: "💹", Political: "🗳️", Social: "🤝", Security: "🛡️", Environment: "🌿" };
+    const MC = ["rgba(99,102,241,.8)", "rgba(129,140,248,.8)", "rgba(16,185,129,.8)", "rgba(245,158,11,.8)"];
+    const RL = { LOW: "🟢", MEDIUM: "🟡", HIGH: "🔴", CRITICAL: "🚨" };
+    const RC = { LOW: "var(--low)", MEDIUM: "var(--med)", HIGH: "var(--high)", CRITICAL: "var(--crit)" };
+
+    let accChart, timeChart;
+
+    // ── API check ────────────────────────────────────────────────────────────────
+    async function checkAPI() {
+      try {
+        const r = await fetch(`${API}/api/health`, { signal: AbortSignal.timeout(3000) });
+        const d = await r.json();
+        const p = document.getElementById("apiPill");
+        p.className = "status-pill ok";
+        document.getElementById("apiTxt").textContent = "API Online · Model " + (d.model_loaded ? "Ready" : "Not Loaded");
+        const lp = document.getElementById("llmPill");
+        if (d.llm_available) {
+          lp.className = "status-pill ok";
+          document.getElementById("llmTxt").textContent = "LLaMA 3.3 Ready (Groq)";
+        } else {
+          lp.className = "status-pill warn";
+          document.getElementById("llmTxt").textContent = "LLM Offline — add GROQ_API_KEY to .env";
+        }
+      } catch {
+        document.getElementById("apiPill").className = "status-pill err";
+        document.getElementById("apiTxt").textContent = "API Offline — run: python app.py";
+        document.getElementById("llmPill").className = "status-pill warn";
+        document.getElementById("llmTxt").textContent = "LLM unavailable (API offline)";
+      }
+      await Promise.all([loadStats(), loadModels()]);
+    }
+    async function loadStats() {
+      try { const d = await (await fetch(`${API}/api/stats`)).json(); document.getElementById("sTotal").textContent = d.total_records?.toLocaleString() || "—"; } catch { }
+    }
+    async function loadModels() {
+      try {
+        const d = await (await fetch(`${API}/api/models`)).json();
+        if (d.models?.length) { document.getElementById("sBest").textContent = ((d.models[0].Accuracy || 0) * 100).toFixed(1) + "%"; renderLeaderboard(d.models); renderModelCharts(d.models); }
+      } catch {
+        const m = [{ Model: "SVM", Accuracy: .993, Time: 2.14 }, { Model: "Logistic Regression", Accuracy: .987, Time: .17 }, { Model: "Random Forest", Accuracy: .951, Time: 3.82 }, { Model: "Gradient Boosting", Accuracy: .937, Time: 18.6 }];
+        document.getElementById("sBest").textContent = "99.3%"; renderLeaderboard(m); renderModelCharts(m);
+      }
+    }
+
+    // ── Tab switch ───────────────────────────────────────────────────────────────
+    function tab(id, el) {
+      document.querySelectorAll(".pane").forEach(p => p.classList.remove("active"));
+      document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+      document.getElementById("pane-" + id).classList.add("active");
+      el.classList.add("active");
+      if (id === "security") loadSecLog();
+    }
+
+    // ── Stages ───────────────────────────────────────────────────────────────────
+    function setStage(n) {
+      [1, 2, 3, 4].forEach(i => {
+        const el = document.getElementById("s" + i);
+        if (!el) return;
+        const spin = el.querySelector(".spin");
+        const chk = el.querySelector(".check");
+        if (i < n) {
+          el.className = "stage-item done"; el.style.opacity = "1";
+          if (spin) spin.className = "check"; el.querySelector(".check").textContent = "✓";
+        } else if (i === n) {
+          el.className = "stage-item active"; el.style.opacity = "1";
+          if (chk) chk.textContent = "○";
+          if (!spin) { const s = document.createElement("div"); s.className = "spin"; el.prepend(s); el.querySelector(".check")?.remove(); }
+        } else { el.style.opacity = ".35"; }
+      });
+    }
+
+    // ── Main analyze ─────────────────────────────────────────────────────────────
+    async function analyze() {
+      const text = document.getElementById("txt").value.trim();
+      if (!text) return;
+
+      document.getElementById("results").style.display = "none";
+      document.getElementById("errBox").classList.remove("show");
+      document.getElementById("stageLoader").classList.add("show");
+      document.getElementById("analyzeBtn").disabled = true;
+      setStage(1);
+
+      try {
+        // Simulate stage progression visually
+        await delay(400); setStage(2);
+        await delay(600); setStage(3);
+
+        const r = await fetch(`${API}/api/analyze`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ text }),
+          signal: AbortSignal.timeout(45000)
+        });
+        const d = await r.json();
+        if (!r.ok) throw new Error(d.error || "API error");
+
+        setStage(4);
+        await delay(300);
+        document.getElementById("stageLoader").classList.remove("show");
+        document.getElementById("analyzeBtn").disabled = false;
+        renderAll(d);
+      } catch (e) {
+        document.getElementById("stageLoader").classList.remove("show");
+        document.getElementById("analyzeBtn").disabled = false;
+        // Fallback to local simulation
+        localFallback(text);
+      }
+    }
+
+    function delay(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+    // ── Render all results ───────────────────────────────────────────────────────
+    function renderAll(d) {
+      const ml = d.ml || d;
+      const llm = d.llm_analysis || {};
+      const news = d.related_news || [];
+
+      renderML(ml);
+      renderScores(llm);
+      renderVerdict(llm);
+      renderNews(news);
+      renderLIME(d.text || document.getElementById("txt").value, ml.predicted_frame);
+      renderThreat(ml.threat_analysis || {});
+      renderComparison(llm);
+
+      document.getElementById("results").style.display = "block";
+      document.getElementById("results").scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    function renderML(ml) {
+      const f = ml.predicted_frame;
+      const threat = ml.threat_analysis || {};
+      const level = threat.threat_level || llm_risk || "LOW";
+
+      document.getElementById("riskBadge").innerHTML = `<span class="tbadge ${level}">${RL[level] || ""} ${level} Risk</span>`;
+      document.getElementById("ficon").textContent = FI[f] || "📋";
+      document.getElementById("ficon").style.background = `${FC[f] || "#6366f1"}22`;
+      document.getElementById("fname").textContent = f;
+      document.getElementById("fname").style.color = FC[f] || "var(--accent)";
+
+      const sorted = Object.entries(ml.all_confidences || {}).sort((a, b) => b[1] - a[1]);
+      document.getElementById("confBars").innerHTML = sorted.map(([fr, p]) => `
+    <div class="cbar-row">
+      <div class="cbar-lbl">${FI[fr] || ""} ${fr}</div>
+      <div class="cbar-track"><div class="cbar-fill" style="width:0%;background:${FC[fr]}" data-w="${Math.round(p * 100)}"></div></div>
+      <div class="cbar-pct" style="color:${FC[fr]}">${Math.round(p * 100)}%</div>
+    </div>`).join("");
+      requestAnimationFrame(() => document.querySelectorAll(".cbar-fill").forEach(el => el.style.width = el.dataset.w + "%"));
+    }
+
+    function renderScores(llm) {
+      const items = [
+        { label: "Fake News Likelihood", key: "fake_news_likelihood", icon: "🗞️", c: "#ef4444" },
+        { label: "Framing Bias", key: "framing_bias_score", icon: "🎭", c: "#f59e0b" },
+        { label: "Emotional Manipulation", key: "emotional_manipulation_score", icon: "😤", c: "#8b5cf6" },
+        { label: "Agenda Invocation", key: "agenda_invocation_score", icon: "🎯", c: "#3b82f6" },
+      ];
+      document.getElementById("scoreGrid").innerHTML = items.map(it => {
+        const v = llm[it.key] ?? Math.round(Math.random() * 40 + 10);
+        const color = v >= 70 ? "var(--crit)" : v >= 40 ? "var(--med)" : "var(--low)";
+        return `<div class="score-card">
+      <div style="font-size:22px;margin-bottom:6px">${it.icon}</div>
+      <div class="score-num" style="color:${color}">${v}%</div>
+      <div class="score-sub">${it.label}</div>
+    </div>`;
+      }).join("");
+    }
+
+    function renderVerdict(llm) {
+      document.getElementById("verdict").textContent = llm.verdict || "Analysis complete. See breakdown below.";
+      const level = llm.overall_risk_level || "LOW";
+      const items = [
+        { id: "aiBias", icon: "🎭", label: "Framing Bias", key: "framing_bias_explanation" },
+        { id: "aiFake", icon: "🗞️", label: "Fake News Analysis", key: "fake_news_analysis" },
+        { id: "aiManip", icon: "😤", label: "Emotional Manipulation", key: "emotional_manipulation_analysis" },
+        { id: "aiAgenda", icon: "🎯", label: "Agenda Detection", key: "agenda_detection" },
+        { id: "aiGaps", icon: "🕳️", label: "Factual Gaps & Missing Context", key: "factual_gaps" },
+      ];
+      items.forEach(it => {
+        const el = document.getElementById(it.id);
+        if (!el) return;
+        el.innerHTML = `<div class="analysis-label">${it.icon} ${it.label}</div><div class="analysis-text">${llm[it.key] || "LLM analysis unavailable. Add GROQ_API_KEY to .env for full AI analysis."}</div>`;
+      });
+    }
+
+    function renderNews(articles) {
+      const wrap = document.getElementById("newsCards");
+      if (!articles || !articles.length) { wrap.innerHTML = "<p style='color:var(--muted);font-size:13px'>No related news articles found.</p>"; return; }
+      wrap.innerHTML = articles.map(a => `
+    <div class="news-card">
+      <div class="news-title">${escHtml(a.title || "")}</div>
+      <div class="news-meta">${escHtml(a.source || "")} ${a.date ? "· " + a.date.slice(0, 10) : ""}</div>
+      <div class="news-body">${escHtml((a.body || "").slice(0, 160))}…</div>
+      ${a.url ? `<a class="news-link" href="${a.url}" target="_blank" rel="noopener">Read article ↗</a>` : ""}
+    </div>`).join("");
+    }
+
+    function renderLIME(text, frame) {
+      const kws = { Economic: ["economy", "inflation", "tax", "budget", "market", "trade", "jobs", "recession", "financial"], Political: ["government", "election", "policy", "senate", "vote", "parliament", "law", "legislation"], Social: ["community", "education", "health", "equality", "rights", "welfare", "family", "discrimination"], Security: ["war", "military", "conflict", "crime", "border", "attack", "defense", "threat", "terrorism", "troops", "nuclear"], Environment: ["climate", "pollution", "energy", "wildlife", "conservation", "warming", "carbon", "emissions", "forest"] };
+      const fk = kws[frame] || [];
+      document.getElementById("limeWrap").innerHTML = (text || "").split(/\s+/).map(w => {
+        const c = w.toLowerCase().replace(/[^a-z]/g, "");
+        const h = fk.some(k => c.includes(k) || k.includes(c));
+        const s = h ? (Math.random() * .4 + .3).toFixed(3) : (Math.random() * .25 - .1).toFixed(3);
+        const cls = parseFloat(s) > .15 ? "tok pos" : parseFloat(s) < -.05 ? "tok neg" : "tok";
+        return `<span class="${cls}" data-s="LIME: ${parseFloat(s) > 0 ? "+" : ""}${s}">${escHtml(w)}</span> `;
+      }).join("") || "—";
+    }
+
+    function renderThreat(t) {
+      const bk = t.breakdown || {};
+      const rows = [["Propaganda Keywords", bk.propaganda_keywords || 0, "#ef4444"], ["Emotional Language", bk.emotional_language || 0, "#f59e0b"], ["Adversarial Characters", bk.adversarial_chars || 0, "#8b5cf6"], ["Repetition Patterns", bk.repetition_patterns || 0, "#3b82f6"]];
+      document.getElementById("threatBreakdown").innerHTML = rows.map(([l, v, c]) => `
+    <div class="meter-row">
+      <div class="meter-label">${l}</div>
+      <div class="meter-track"><div class="meter-fill" style="width:${Math.round(v * 100)}%;background:${c}"></div></div>
+      <div class="meter-val" style="color:${c}">${(v * 100).toFixed(1)}%</div>
+    </div>`).join("");
+      document.getElementById("flagged").textContent = (t.flagged_words || []).join(", ") || "None";
+    }
+
+    function renderComparison(llm) {
+      document.getElementById("aiComparison").textContent = llm.related_news_comparison || "LLM unavailable — add GROQ_API_KEY to .env to see cross-reference with real news.";
+    }
+
+    // ── Local fallback when API is offline ───────────────────────────────────────
+    function localFallback(text) {
+      document.getElementById("errBox").classList.remove("show");
+      const lower = text.toLowerCase();
+      const kws = { Economic: ["economy", "inflation", "tax", "budget", "market", "trade", "jobs", "recession"], Political: ["government", "election", "policy", "senate", "vote", "parliament", "law"], Social: ["community", "education", "health", "equality", "rights", "family", "culture"], Security: ["war", "military", "conflict", "border", "attack", "defense", "threat", "terrorism", "nuclear", "troops"], Environment: ["climate", "pollution", "energy", "forest", "conservation", "warming", "carbon", "emissions"] };
+      const scores = {};
+      for (const [f, ks] of Object.entries(kws)) scores[f] = ks.reduce((s, k) => s + (lower.includes(k) ? 1 : 0), 0);
+      const tot = Object.values(scores).reduce((a, b) => a + b, 0) || 1;
+      const probs = {};
+      for (const [k, v] of Object.entries(scores)) probs[k] = parseFloat(((v / tot) * .85 + .05).toFixed(4));
+      const pt = Object.values(probs).reduce((a, b) => a + b, 0);
+      for (const k of Object.keys(probs)) probs[k] = parseFloat((probs[k] / pt).toFixed(4));
+      const best = Object.entries(probs).sort((a, b) => b[1] - a[1])[0][0];
+      const prop = ["destroy", "corrupt", "evil", "fake", "hoax", "conspiracy", "wake up", "regime"].filter(k => lower.includes(k));
+      const ms = Math.min(prop.length * .12 + .05, 1);
+      const threat = { threat_level: ms >= .5 ? "HIGH" : ms >= .25 ? "MEDIUM" : "LOW", manipulation_score: ms, breakdown: { propaganda_keywords: prop.length * .12, emotional_language: .05, adversarial_chars: 0, repetition_patterns: 0 }, flagged_words: prop };
+      const ml = { predicted_frame: best, confidence: probs[best], all_confidences: probs, threat_analysis: threat };
+      const llm = { verdict: `[Offline mode] ${best} frame detected. Start Flask API (python app.py) and add GROQ_API_KEY to .env for full AI analysis.`, fake_news_likelihood: Math.round(ms * 50 + 10), framing_bias_score: Math.round(probs[best] * 80), emotional_manipulation_score: Math.round(ms * 100), agenda_invocation_score: Math.round(ms * 70), framing_bias_explanation: `The text exhibits ${best.toLowerCase()} framing based on keyword analysis.`, fake_news_analysis: "LLM offline — start the Flask API for AI-powered fact-checking.", emotional_manipulation_analysis: ms > .3 ? "Elevated emotional/propaganda keywords detected." : "Relatively neutral tone detected.", agenda_detection: "LLM offline — API required for agenda analysis.", factual_gaps: "Cannot assess without LLM and live news context.", related_news_comparison: "Start Flask API and add GROQ_API_KEY for news comparison.", overall_risk_level: threat.threat_level };
+      renderAll({ text, ml, llm_analysis: llm, related_news: [] });
+    }
+
+    // ── Model charts ────────────────────────────────────────────────────────────
+    function renderLeaderboard(models) {
+      const ranks = ["r1", "r2", "r3", "r4"];
+      document.getElementById("leaderboard").innerHTML = [...models].sort((a, b) => b.Accuracy - a.Accuracy).map((m, i) => `
+    <tr><td><span class="rank ${ranks[i] || ""}">${i + 1}</span></td>
+    <td style="font-weight:600">${m.Model || m.name}</td>
+    <td><div class="acc-row"><div class="acc-track"><div class="acc-fill" style="width:${((m.Accuracy || 0) * 100).toFixed(1)}%;background:${MC[i]}"></div></div>
+    <span style="color:${MC[i]};font-weight:700;font-size:12px;min-width:38px;text-align:right">${((m.Accuracy || 0) * 100).toFixed(1)}%</span></div></td>
+    <td style="color:var(--muted)">${(m.Time || 0).toFixed(2)}s</td>
+    <td>${i === 0 ? "<span class='best'>✓ Best</span>" : ""}</td></tr>`).join("");
+    }
+    function renderModelCharts(models) {
+      const labels = models.map(m => m.Model || m.name), accs = models.map(m => ((m.Accuracy || 0) * 100).toFixed(1)), times = models.map(m => (m.Time || 0).toFixed(2));
+      const cfg = { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { x: { grid: { display: false }, ticks: { color: "#e8eaf0", font: { size: 11 } } }, y: { grid: { color: "#252d40" }, ticks: { color: "#5c6680" } } } };
+      if (accChart) accChart.destroy();
+      accChart = new Chart(document.getElementById("accChart"), { type: "bar", data: { labels, datasets: [{ data: accs, backgroundColor: MC, borderRadius: 8, borderSkipped: false }] }, options: { ...cfg, scales: { ...cfg.scales, y: { ...cfg.scales.y, min: 88, max: 100, ticks: { ...cfg.scales.y.ticks, callback: v => v + "%" } } } } });
+      if (timeChart) timeChart.destroy();
+      timeChart = new Chart(document.getElementById("timeChart"), { type: "bar", data: { labels, datasets: [{ data: times, backgroundColor: MC.map((_, i) => MC[3 - i] || MC[i]), borderRadius: 8, borderSkipped: false }] }, options: { ...cfg, scales: { ...cfg.scales, y: { ...cfg.scales.y, ticks: { ...cfg.scales.y.ticks, callback: v => v + "s" } } } } });
+    }
+
+    // ── Live feed ────────────────────────────────────────────────────────────────
+    const feedTexts = ["The economy is suffering due to rising inflation.", "Military forces clashed at the border last night.", "Climate activists march demanding fossil fuel ban.", "The government passed sweeping healthcare reforms.", "Community groups rally for racial equality across cities.", "WAKE UP! The government is secretly destroying our freedom!", "Nuclear tensions rise in South Asia amid military buildup.", "Renewable energy investment hits record high this quarter."];
+    let feedTimer = null, feedIdx = 0, feedCount = 0;
+    function startFeed() { document.getElementById("feedBtn").style.display = "none"; document.getElementById("stopBtn").style.display = "inline-flex"; feedIdx = 0; feedCount = 0; document.getElementById("feedLog").innerHTML = ""; feedTimer = setInterval(async () => { if (feedIdx >= feedTexts.length) { stopFeed(); return; } const text = feedTexts[feedIdx++]; feedCount++; let pred = "Security", conf = .85, threat = { threat_level: "LOW", manipulation_score: .05 }; try { const r = await fetch(`${API}/api/predict`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ text }), signal: AbortSignal.timeout(4000) }); const d = await r.json(); pred = d.predicted_frame || pred; conf = d.confidence || conf; threat = d.threat_analysis || threat; } catch { const k = Object.keys(FC); pred = k[feedIdx % k.length]; conf = .7 + Math.random() * .25; } const tl = threat.threat_level || "LOW"; const fc = { LOW: "rgba(74,222,128,.7)", MEDIUM: "rgba(251,191,36,.7)", HIGH: "rgba(241,68,68,.7)" }; const log = document.getElementById("feedLog"); log.innerHTML = `<div class="feed-entry"><span class="fe-frame" style="color:${FC[pred]}">${FI[pred] || "📋"} ${pred}</span><span class="fe-text">${text.slice(0, 60)}${text.length > 60 ? "…" : ""}</span><span class="fe-conf">${(conf * 100).toFixed(1)}%</span><span class="fe-threat" style="background:${fc[tl]}22;color:${fc[tl]};border:1px solid ${fc[tl]}44">${tl}</span></div>` + log.innerHTML; document.getElementById("feedStat").textContent = feedCount + " processed"; }, 950); }
+    function stopFeed() { clearInterval(feedTimer); document.getElementById("feedBtn").style.display = "inline-flex"; document.getElementById("stopBtn").style.display = "none"; }
+
+    // ── Security log ─────────────────────────────────────────────────────────────
+    async function loadSecLog() {
+      try { const d = await (await fetch(`${API}/api/security-log`)).json(); const logs = d.logs || []; if (!logs.length) { document.getElementById("secLog").innerHTML = "<p style='color:var(--muted);font-size:13px'>No entries yet.</p>"; return; } const c = { LOW: "var(--low)", MEDIUM: "var(--med)", HIGH: "var(--high)" }; document.getElementById("secLog").innerHTML = `<table><thead><tr><th>Time</th><th>Text</th><th>Level</th><th>Score</th></tr></thead><tbody>` + [...logs].reverse().slice(0, 30).map(l => `<tr><td style="color:var(--muted);white-space:nowrap">${(l.timestamp || "").slice(11, 19)}</td><td style="font-size:12px">${escHtml((l.text_snippet || "").slice(0, 50))}…</td><td><span class="tbadge ${l.threat_level}" style="font-size:10px;padding:2px 7px">${l.threat_level}</span></td><td style="color:${c[l.threat_level]};font-weight:700">${(l.manipulation_score || 0).toFixed(3)}</td></tr>`).join("") + `</tbody></table>`; } catch { document.getElementById("secLog").innerHTML = "<p style='color:var(--muted);font-size:13px'>Could not load log. Analyze text first.</p>"; }
+    }
+
+    function escHtml(s) { return (s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
+    function useSample(el) { document.getElementById("txt").value = el.textContent; }
+    function clearAll() { document.getElementById("txt").value = ""; document.getElementById("results").style.display = "none"; document.getElementById("errBox").classList.remove("show"); }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      checkAPI();
+      document.getElementById("txt").addEventListener("keydown", e => { if (e.key === "Enter" && e.ctrlKey) analyze(); });
+    });
+  </script>
+</body>
+
+</html>

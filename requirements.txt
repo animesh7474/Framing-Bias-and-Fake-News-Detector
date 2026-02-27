@@ -1,0 +1,15 @@
+scikit-learn
+pandas
+numpy
+lime
+matplotlib
+flask
+flask-cors
+spacy
+textblob
+wordcloud
+joblib
+pytest
+groq
+duckduckgo-search
+python-dotenv

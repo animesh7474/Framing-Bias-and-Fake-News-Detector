@@ -1,12 +1,35 @@
-.env
+# Environments
 .venv/
+env/
+venv/
+.env
+
+# Python
 __pycache__/
 *.pyc
-.pytest_cache/
+*.pyo
+*.pyd
+
+# Data & Logs
 app.log
-security_log.json
-framing_bias_model.pkl
-model_comparison_results.csv
+logs/
+Latest news/
 dataset.csv
-*~
-*.swp
+user_feedback.csv
+user_submissions.csv
+*.json
+!retraining_log.json
+!security_log.json
+!api_output.json
+!output.json
+
+# Large Assets
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.pkl
+
+# OS
+.DS_Store
+Thumbs.db

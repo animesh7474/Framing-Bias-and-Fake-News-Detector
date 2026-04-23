@@ -1,0 +1,3716 @@
+[
+  {
+    "text_snippet": "The government is destroying our economy with terrible policies!",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.2983,
+    "breakdown": {
+      "propaganda_keywords": 0.2174,
+      "emotional_language": 0.7407,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [
+      "destroy"
+    ],
+    "timestamp": "2026-02-24T15:56:02.534904Z"
+  },
+  {
+    "text_snippet": "The government is destroying our economy with terrible policies!",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.2983,
+    "breakdown": {
+      "propaganda_keywords": 0.2174,
+      "emotional_language": 0.7407,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [
+      "destroy"
+    ],
+    "timestamp": "2026-02-24T15:56:27.922272Z"
+  },
+  {
+    "text_snippet": "The government is absolutely destroying our economy with corrupt policies!",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.3522,
+    "breakdown": {
+      "propaganda_keywords": 0.4348,
+      "emotional_language": 0.6667,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [
+      "destroy",
+      "corrupt"
+    ],
+    "timestamp": "2026-02-24T15:56:31.903569Z"
+  },
+  {
+    "text_snippet": "The stock market showed moderate gains today.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-24T15:56:31.965730Z"
+  },
+  {
+    "text_snippet": "WAKE UP SHEEPLE! The hidden agenda will completely destroy our freedom!",
+    "threat_level": "HIGH",
+    "manipulation_score": 0.65,
+    "breakdown": {
+      "propaganda_keywords": 1.0,
+      "emotional_language": 1.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [
+      "destroy",
+      "agenda",
+      "hidden",
+      "wake up",
+      "sheeple"
+    ],
+    "timestamp": "2026-02-24T15:56:32.007168Z"
+  },
+  {
+    "text_snippet": "The economy is facing a major recession",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-24T16:00:36.098307Z"
+  },
+  {
+    "text_snippet": "will india attack pakistan this year?",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.3,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 1.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-24T16:02:57.071470Z"
+  },
+  {
+    "text_snippet": "Will India attack Pakistan this year?",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.3,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 1.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-24T16:49:24.881640Z"
+  },
+  {
+    "text_snippet": "2 niggers killed in america",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-24T17:53:25.234371Z"
+  },
+  {
+    "text_snippet": "PM Modi\u2019s Israel visit faces geopolitical headwinds",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0392,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.1961,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-24T17:55:28.364294Z"
+  },
+  {
+    "text_snippet": "Kerala to be renamed Keralam: Historical, linguistic roots of the demand",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-24T17:57:18.923657Z"
+  },
+  {
+    "text_snippet": "The economy is suffering due to rising inflation.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-24T17:58:50.513347Z"
+  },
+  {
+    "text_snippet": "Military forces clashed at the border last night.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-24T17:58:50.886839Z"
+  },
+  {
+    "text_snippet": "Climate activists march demanding fossil fuel ban.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-24T17:58:52.152319Z"
+  },
+  {
+    "text_snippet": "The government passed sweeping healthcare reforms.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-24T17:58:52.787464Z"
+  },
+  {
+    "text_snippet": "Community groups rally for racial equality across cities.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-24T17:58:54.050201Z"
+  },
+  {
+    "text_snippet": "WAKE UP! The government is secretly destroying our freedom!",
+    "threat_level": "LOW",
+    "manipulation_score": 0.2283,
+    "breakdown": {
+      "propaganda_keywords": 0.6522,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [
+      "destroy",
+      "secret",
+      "wake up"
+    ],
+    "timestamp": "2026-02-24T17:58:54.687348Z"
+  },
+  {
+    "text_snippet": "Nuclear tensions rise in South Asia amid military buildup.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-24T17:58:56.210067Z"
+  },
+  {
+    "text_snippet": "Renewable energy investment hits record high this quarter.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-24T17:58:56.596401Z"
+  },
+  {
+    "text_snippet": "PM Modi meets Netanyahu in Tel Aviv",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-25T13:40:07.429173Z"
+  },
+  {
+    "text_snippet": "Dolphin City: Chennai\u2019s dolphinarium that shaped national debate on marine mamma",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0183,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0917,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-25T14:17:51.538978Z"
+  },
+  {
+    "text_snippet": "it is believed that trump is going to reduce the tariff on india in upcoming 202",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0928,
+    "breakdown": {
+      "propaganda_keywords": 0.2174,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.1111
+    },
+    "flagged_words": [
+      "lie"
+    ],
+    "timestamp": "2026-02-25T14:20:31.139374Z"
+  },
+  {
+    "text_snippet": "it was very arrogant of India's PM Modi to decline Trump's friendly offer",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-25T14:23:03.230139Z"
+  },
+  {
+    "text_snippet": "Live: Pakistan declares \u2018open war\u2019 on Afghanistan, fighter jets bomb Kabul",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0541,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.2703,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-27T06:56:09.708104Z"
+  },
+  {
+    "text_snippet": "Pakistan Afghanistan War Live Updates: Iran offers to mediate Afghanistan confli",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1262,
+    "breakdown": {
+      "propaganda_keywords": 0.2174,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.043,
+      "repetition_patterns": 0.2769
+    },
+    "flagged_words": [
+      "lie"
+    ],
+    "timestamp": "2026-02-27T07:00:43.575101Z"
+  },
+  {
+    "text_snippet": "\u2018Open war\u2019: Pakistan says \u2018patience has run out\u2019 as it bombs Afghanistan\nAl Jaze",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0752,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.2151,
+      "repetition_patterns": 0.2143
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-27T07:04:32.428847Z"
+  },
+  {
+    "text_snippet": "\u2018Open war\u2019: Pakistan says \u2018patience has run out\u2019 as it bombs Afghanistan\nAl Jaze",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0752,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.2151,
+      "repetition_patterns": 0.2143
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-27T07:14:46.316395Z"
+  },
+  {
+    "text_snippet": "Breaking | All Accused Including Arvind Kejriwal, Manish Sisodia Discharged In L",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-27T07:17:03.914042Z"
+  },
+  {
+    "text_snippet": "Breaking | All Accused Including Arvind Kejriwal, Manish Sisodia Discharged In L",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-27T07:33:13.041761Z"
+  },
+  {
+    "text_snippet": "Pakistan bombs Kabul: Why are Afghanistan and Pakistan fighting?\nPakistani defen",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0992,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.1389,
+      "repetition_patterns": 0.4762
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-27T16:21:24.161579Z"
+  },
+  {
+    "text_snippet": "India-Israel ties have stood \u2018test of time\u2019; will soon finalise FTA: PM Modi\nPM ",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1089,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.1852,
+      "adversarial_chars": 0.1,
+      "repetition_patterns": 0.2222
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-27T16:22:22.709294Z"
+  },
+  {
+    "text_snippet": "The economy is suffering due to rising inflation.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-27T16:34:55.292560Z"
+  },
+  {
+    "text_snippet": "Military forces clashed at the border last night.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-27T16:34:55.986059Z"
+  },
+  {
+    "text_snippet": "Climate activists march demanding fossil fuel ban.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-27T16:34:56.946985Z"
+  },
+  {
+    "text_snippet": "The government passed sweeping healthcare reforms.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-27T16:34:57.892166Z"
+  },
+  {
+    "text_snippet": "Community groups rally for racial equality across cities.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-27T16:34:58.834882Z"
+  },
+  {
+    "text_snippet": "WAKE UP! The government is secretly destroying our freedom!",
+    "threat_level": "LOW",
+    "manipulation_score": 0.2283,
+    "breakdown": {
+      "propaganda_keywords": 0.6522,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [
+      "destroy",
+      "secret",
+      "wake up"
+    ],
+    "timestamp": "2026-02-27T16:34:59.796137Z"
+  },
+  {
+    "text_snippet": "Nuclear tensions rise in South Asia amid military buildup.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-27T16:35:00.743631Z"
+  },
+  {
+    "text_snippet": "Renewable energy investment hits record high this quarter.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-27T16:35:01.692557Z"
+  },
+  {
+    "text_snippet": "The economy is suffering due to rising inflation.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-27T16:35:10.449655Z"
+  },
+  {
+    "text_snippet": "Military forces clashed at the border last night.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-27T16:35:11.393267Z"
+  },
+  {
+    "text_snippet": "Climate activists march demanding fossil fuel ban.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-27T16:35:12.342631Z"
+  },
+  {
+    "text_snippet": "The government passed sweeping healthcare reforms.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-27T16:35:13.306833Z"
+  },
+  {
+    "text_snippet": "Community groups rally for racial equality across cities.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-27T16:35:14.252173Z"
+  },
+  {
+    "text_snippet": "WAKE UP! The government is secretly destroying our freedom!",
+    "threat_level": "LOW",
+    "manipulation_score": 0.2283,
+    "breakdown": {
+      "propaganda_keywords": 0.6522,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [
+      "destroy",
+      "secret",
+      "wake up"
+    ],
+    "timestamp": "2026-02-27T16:35:15.203524Z"
+  },
+  {
+    "text_snippet": "Nuclear tensions rise in South Asia amid military buildup.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-27T16:35:16.139754Z"
+  },
+  {
+    "text_snippet": "Renewable energy investment hits record high this quarter.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-27T16:35:17.083732Z"
+  },
+  {
+    "text_snippet": "The economy is suffering due to rising inflation.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-27T16:35:21.939923Z"
+  },
+  {
+    "text_snippet": "Military forces clashed at the border last night.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-27T16:35:22.884462Z"
+  },
+  {
+    "text_snippet": "Climate activists march demanding fossil fuel ban.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-27T16:35:23.834931Z"
+  },
+  {
+    "text_snippet": "The government passed sweeping healthcare reforms.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-27T16:35:24.784760Z"
+  },
+  {
+    "text_snippet": "Community groups rally for racial equality across cities.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-27T16:35:25.741977Z"
+  },
+  {
+    "text_snippet": "WAKE UP! The government is secretly destroying our freedom!",
+    "threat_level": "LOW",
+    "manipulation_score": 0.2283,
+    "breakdown": {
+      "propaganda_keywords": 0.6522,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [
+      "destroy",
+      "secret",
+      "wake up"
+    ],
+    "timestamp": "2026-02-27T16:35:26.697085Z"
+  },
+  {
+    "text_snippet": "Nuclear tensions rise in South Asia amid military buildup.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-27T16:35:27.642189Z"
+  },
+  {
+    "text_snippet": "Renewable energy investment hits record high this quarter.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-27T16:35:28.588987Z"
+  },
+  {
+    "text_snippet": "fucking pakistan cannot win a war",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-27T16:38:43.178129Z"
+  },
+  {
+    "text_snippet": "India-Israel ties have stood \u2018test of time\u2019; will soon finalise FTA: PM Modi\nPM ",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1089,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.1852,
+      "adversarial_chars": 0.1,
+      "repetition_patterns": 0.2222
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-27T16:39:41.151579Z"
+  },
+  {
+    "text_snippet": "India-Israel ties have stood \u2018test of time\u2019; will soon finalise FTA: PM Modi\nPM ",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1089,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.1852,
+      "adversarial_chars": 0.1,
+      "repetition_patterns": 0.2222
+    },
+    "flagged_words": [],
+    "timestamp": "2026-02-28T05:43:31.036202Z"
+  },
+  {
+    "text_snippet": "Protest march, mourning in Karnataka\u2019s Alipur over death of Iran\u2019s Supreme Leade",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0421,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0855,
+      "repetition_patterns": 0.1667
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-01T14:21:47.482788Z"
+  },
+  {
+    "text_snippet": "Economic inflation is rising in Europe due to energy crises.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-01T15:39:32.327310Z"
+  },
+  {
+    "text_snippet": "Economic inflation is rising in Europe due to energy crises.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-01T15:40:09.892696Z"
+  },
+  {
+    "text_snippet": "What we know on day three of US-Israeli attacks on Iran\nA day after the Iranian ",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0483,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0538,
+      "repetition_patterns": 0.25
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-02T16:06:12.781990Z"
+  },
+  {
+    "text_snippet": "Bombay High Court Issues Notice To Centre On Gas Distributors' Plea To Increase ",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0545,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.3636
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-13T13:27:49.051791Z"
+  },
+  {
+    "text_snippet": "Bombay High Court Issues Notice To Centre On Gas Distributors' Plea To Increase ",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0545,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.3636
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-13T16:09:24.789118Z"
+  },
+  {
+    "text_snippet": "Bombay High Court Issues Notice To Centre On Gas Distributors' Plea To Increase ",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0545,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.3636
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-13T16:23:52.776409Z"
+  },
+  {
+    "text_snippet": "Africa-Bound India-Flagged Fuel Tanker Sets Sail From East Of Hormuz\nGulf shippi",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0176,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.1176
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-13T16:34:46.930415Z"
+  },
+  {
+    "text_snippet": "Bombay High Court Issues Notice To Centre On Gas Distributors' Plea To Increase ",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0545,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.3636
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-13T16:35:12.668806Z"
+  },
+  {
+    "text_snippet": "Africa-Bound India-Flagged Fuel Tanker Sets Sail From East Of Hormuz\nGulf shippi",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0176,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.1176
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-13T16:35:35.067102Z"
+  },
+  {
+    "text_snippet": "Africa-Bound India-Flagged Fuel Tanker Sets Sail From East Of Hormuz\nGulf shippi",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0176,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.1176
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-13T16:38:24.610338Z"
+  },
+  {
+    "text_snippet": "Africa-Bound India-Flagged Fuel Tanker Sets Sail From East Of Hormuz\nGulf shippi",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0176,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.1176
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-13T16:40:28.492388Z"
+  },
+  {
+    "text_snippet": "Africa-Bound India-Flagged Fuel Tanker Sets Sail From East Of Hormuz\nGulf shippi",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0176,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.1176
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-13T17:44:51.796012Z"
+  },
+  {
+    "text_snippet": "\"Totally Obliterated\": Trump Says US Bombed Iran's \"Crown Jewel\" Kharg Island\nTr",
+    "threat_level": "LOW",
+    "manipulation_score": 0.04,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.2667
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-14T05:08:58.609561Z"
+  },
+  {
+    "text_snippet": "Iran to allow Indian ships to pass, Modi says India a friend of Iran; Tehran see",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0225,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.15
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-14T05:09:40.659719Z"
+  },
+  {
+    "text_snippet": "India tells LPG users to switch to piped gas wherever possible\nIndia \u200bhas asked ",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0924,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0985,
+      "repetition_patterns": 0.4848
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-14T05:10:45.965453Z"
+  },
+  {
+    "text_snippet": "The economy is collapsing due to bad government policy!",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T16:20:59.619195Z"
+  },
+  {
+    "text_snippet": "Trump demands others help secure Strait of Hormuz, Japan and Australia say no pl",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0655,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.042,
+      "repetition_patterns": 0.381
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T16:26:12.677672Z"
+  },
+  {
+    "text_snippet": "India-US trade deal signing on hold until new tariff structure is in place, says",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1966,
+    "breakdown": {
+      "propaganda_keywords": 0.2174,
+      "emotional_language": 0.1709,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.4615
+    },
+    "flagged_words": [
+      "secret"
+    ],
+    "timestamp": "2026-03-16T16:26:45.157051Z"
+  },
+  {
+    "text_snippet": "BOOM! Iran Shocks Israel, US With First 'SEJJIL MISSILE' Launch, American Defenc",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0257,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.1714
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T16:27:08.894616Z"
+  },
+  {
+    "text_snippet": "The economy is collapsing due to bad government policy!",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T16:34:42.593459Z"
+  },
+  {
+    "text_snippet": "The stock market showed moderate gains today with standard fluctuations.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T16:34:47.626779Z"
+  },
+  {
+    "text_snippet": "WAKE UP SHEEPLE! The hidden agenda will completely destroy our freedom!",
+    "threat_level": "HIGH",
+    "manipulation_score": 0.65,
+    "breakdown": {
+      "propaganda_keywords": 1.0,
+      "emotional_language": 1.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [
+      "destroy",
+      "agenda",
+      "hidden",
+      "wake up",
+      "sheeple"
+    ],
+    "timestamp": "2026-03-16T16:34:52.400874Z"
+  },
+  {
+    "text_snippet": "Local community center to host annual charity bake sale this Saturday.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T16:34:57.681656Z"
+  },
+  {
+    "text_snippet": "The economy is collapsing due to bad government policy!",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T16:39:13.239233Z"
+  },
+  {
+    "text_snippet": "The stock market showed moderate gains today with standard fluctuations.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T16:39:18.327850Z"
+  },
+  {
+    "text_snippet": "WAKE UP SHEEPLE! The hidden agenda will completely destroy our freedom!",
+    "threat_level": "HIGH",
+    "manipulation_score": 0.65,
+    "breakdown": {
+      "propaganda_keywords": 1.0,
+      "emotional_language": 1.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [
+      "destroy",
+      "agenda",
+      "hidden",
+      "wake up",
+      "sheeple"
+    ],
+    "timestamp": "2026-03-16T16:39:22.840502Z"
+  },
+  {
+    "text_snippet": "Local community center to host annual charity bake sale this Saturday.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T16:39:27.752059Z"
+  },
+  {
+    "text_snippet": "Politics is often polarized these days.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T16:39:53.706670Z"
+  },
+  {
+    "text_snippet": "Verification test.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T16:40:29.407945Z"
+  },
+  {
+    "text_snippet": "BOOM! Iran Shocks Israel, US With First 'SEJJIL MISSILE' Launch, American Defenc",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0257,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.1714
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T16:43:57.485356Z"
+  },
+  {
+    "text_snippet": "India-US trade deal signing on hold until new tariff structure is in place, says",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1966,
+    "breakdown": {
+      "propaganda_keywords": 0.2174,
+      "emotional_language": 0.1709,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.4615
+    },
+    "flagged_words": [
+      "secret"
+    ],
+    "timestamp": "2026-03-16T16:44:26.677769Z"
+  },
+  {
+    "text_snippet": "India-US trade deal signing on hold until new tariff structure is in place, says",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1966,
+    "breakdown": {
+      "propaganda_keywords": 0.2174,
+      "emotional_language": 0.1709,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.4615
+    },
+    "flagged_words": [
+      "secret"
+    ],
+    "timestamp": "2026-03-16T16:44:41.789090Z"
+  },
+  {
+    "text_snippet": "Setback for Mahagathbandhan in Bihar as 4 MLAs skip voting in Rajya Sabha polls\n",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0892,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.5946
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T16:44:57.336098Z"
+  },
+  {
+    "text_snippet": "The stock market closed 0.5% higher today after an uneventful trading session.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T16:56:21.307698Z"
+  },
+  {
+    "text_snippet": "The new economic policy might cause some issues for small business owners in the",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0187,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.125
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T16:56:21.582136Z"
+  },
+  {
+    "text_snippet": "This ridiculous new law is a complete disaster and will totally ruin our great c",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.2667,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.8889,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T16:56:21.612028Z"
+  },
+  {
+    "text_snippet": "WAKE UP SHEEPLE! The corrupt government is absolutely brainwashing the masses wi",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.465,
+    "breakdown": {
+      "propaganda_keywords": 1.0,
+      "emotional_language": 0.3333,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.1
+    },
+    "flagged_words": [
+      "destroy",
+      "corrupt",
+      "fake",
+      "brainwash",
+      "agenda",
+      "wake up",
+      "sheeple"
+    ],
+    "timestamp": "2026-03-16T16:56:21.649429Z"
+  },
+  {
+    "text_snippet": "The stock market closed 0.5% higher today after an uneventful trading session.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T16:57:14.915834Z"
+  },
+  {
+    "text_snippet": "The new economic policy might cause some issues for small business owners in the",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0187,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.125
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T16:57:15.040360Z"
+  },
+  {
+    "text_snippet": "This ridiculous new law is a complete disaster and will totally ruin our great c",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.2667,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.8889,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T16:57:15.060286Z"
+  },
+  {
+    "text_snippet": "WAKE UP SHEEPLE! The corrupt government is absolutely brainwashing the masses wi",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.465,
+    "breakdown": {
+      "propaganda_keywords": 1.0,
+      "emotional_language": 0.3333,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.1
+    },
+    "flagged_words": [
+      "destroy",
+      "corrupt",
+      "fake",
+      "brainwash",
+      "agenda",
+      "wake up",
+      "sheeple"
+    ],
+    "timestamp": "2026-03-16T16:57:15.090179Z"
+  },
+  {
+    "text_snippet": "Setback for Mahagathbandhan in Bihar as 4 MLAs skip voting in Rajya Sabha polls\n",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0892,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.5946
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T16:59:56.668110Z"
+  },
+  {
+    "text_snippet": "Trump demands others help secure Strait of Hormuz, Japan and Australia say no pl",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0655,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.042,
+      "repetition_patterns": 0.381
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T17:00:30.371667Z"
+  },
+  {
+    "text_snippet": "Trump demands others help secure Strait of Hormuz, Japan and Australia say no pl",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0655,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.042,
+      "repetition_patterns": 0.381
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T17:00:35.158678Z"
+  },
+  {
+    "text_snippet": "The economy is doing great, but the opposition says otherwise.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.03,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.2
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T17:04:08.134083Z"
+  },
+  {
+    "text_snippet": "The economy is doing great, but the opposition says otherwise.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.03,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.2
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T17:05:38.748734Z"
+  },
+  {
+    "text_snippet": "The economy is doing great, but the opposition says otherwise.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.03,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.2
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T17:06:01.041775Z"
+  },
+  {
+    "text_snippet": "The economy is doing great, but the opposition says otherwise.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.03,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.2
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T17:06:41.431306Z"
+  },
+  {
+    "text_snippet": "The economy is doing great, but the opposition says otherwise.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.03,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.2
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T17:08:34.540417Z"
+  },
+  {
+    "text_snippet": "The economy is doing great, but the opposition says otherwise.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.03,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.2
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T17:12:14.142322Z"
+  },
+  {
+    "text_snippet": "WAKE UP SHEEPLE! The globalist regime is secretly destroying our freedom and we ",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.45,
+    "breakdown": {
+      "propaganda_keywords": 1.0,
+      "emotional_language": 0.3333,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0
+    },
+    "flagged_words": [
+      "destroy",
+      "secret",
+      "wake up",
+      "sheeple",
+      "regime"
+    ],
+    "timestamp": "2026-03-16T17:12:45.458627Z"
+  },
+  {
+    "text_snippet": "Trump demands others help secure Strait of Hormuz, Japan and Australia say no pl",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0655,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.042,
+      "repetition_patterns": 0.381
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T17:14:20.746052Z"
+  },
+  {
+    "text_snippet": "Emirates Flight Returns To Thiruvananthapuram As Drone Strike Shuts Dubai Airpor",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0207,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.1379
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T17:14:46.139095Z"
+  },
+  {
+    "text_snippet": "India-US trade deal signing on hold until new tariff structure is in place, says",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1966,
+    "breakdown": {
+      "propaganda_keywords": 0.2174,
+      "emotional_language": 0.1709,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.4615
+    },
+    "flagged_words": [
+      "secret"
+    ],
+    "timestamp": "2026-03-16T17:15:09.033656Z"
+  },
+  {
+    "text_snippet": "Setback for Mahagathbandhan in Bihar as 4 MLAs skip voting in Rajya Sabha polls\n",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0892,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.5946
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T17:15:32.158465Z"
+  },
+  {
+    "text_snippet": "Setback for Mahagathbandhan in Bihar as 4 MLAs skip voting in Rajya Sabha polls\n",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0892,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.5946
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T17:15:46.715052Z"
+  },
+  {
+    "text_snippet": "BOOM! Iran Shocks Israel, US With First 'SEJJIL MISSILE' Launch, American Defenc",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0257,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.1714
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T17:16:11.372355Z"
+  },
+  {
+    "text_snippet": "bcci president jay shah's decision of letting hardik pandya play in world cup wa",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0125,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0833
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T17:17:54.892887Z"
+  },
+  {
+    "text_snippet": "The government is absolutely destroying our economy with corrupt policies! WAKE ",
+    "threat_level": "HIGH",
+    "manipulation_score": 1.0,
+    "true_bias_score": 1.0,
+    "breakdown": {
+      "propaganda_density": 1.0,
+      "sentiment_extremity": 0.7237,
+      "subjectivity_ratio": 0.4286,
+      "adjective_density": 0.1667,
+      "reading_grade_level": 14.7
+    },
+    "flagged_words": [
+      "destroy",
+      "wake up",
+      "corrupt"
+    ],
+    "timestamp": "2026-03-16T17:30:37.454503Z"
+  },
+  {
+    "text_snippet": "The stock market showed moderate gains today, closing up 0.5% after strong tech ",
+    "threat_level": "HIGH",
+    "manipulation_score": 0.6537,
+    "true_bias_score": 0.4745,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.6908,
+      "subjectivity_ratio": 0.2727,
+      "adjective_density": 0.1429,
+      "reading_grade_level": 4.8
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T17:30:37.628985Z"
+  },
+  {
+    "text_snippet": "WAKE UP SHEEPLE! The hidden agenda will completely destroy our freedom! They are",
+    "threat_level": "HIGH",
+    "manipulation_score": 1.0,
+    "true_bias_score": 1.0,
+    "breakdown": {
+      "propaganda_density": 1.0,
+      "sentiment_extremity": 0.6814,
+      "subjectivity_ratio": 0.5625,
+      "adjective_density": 0.2,
+      "reading_grade_level": 6.0
+    },
+    "flagged_words": [
+      "destroy",
+      "agenda",
+      "wake up",
+      "hidden",
+      "sheeple",
+      "evil",
+      "traitor"
+    ],
+    "timestamp": "2026-03-16T17:30:37.817712Z"
+  },
+  {
+    "text_snippet": "Inflation rose by 3 percent this quarter, marking a slight decrease from the pre",
+    "threat_level": "LOW",
+    "manipulation_score": 0.135,
+    "true_bias_score": 0.18,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.0,
+      "subjectivity_ratio": 0.3,
+      "adjective_density": 0.1,
+      "reading_grade_level": 11.7
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T17:30:37.937598Z"
+  },
+  {
+    "text_snippet": "WAKE UP SHEEPLE! The globalist regime is secretly destroying our freedom and we ",
+    "threat_level": "HIGH",
+    "manipulation_score": 0.8775,
+    "true_bias_score": 0.9804,
+    "breakdown": {
+      "propaganda_density": 1.0,
+      "sentiment_extremity": 0.3786,
+      "subjectivity_ratio": 0.6,
+      "adjective_density": 0.1905,
+      "reading_grade_level": 6.0
+    },
+    "flagged_words": [
+      "wake up",
+      "secret",
+      "regime",
+      "sheeple",
+      "destroy"
+    ],
+    "timestamp": "2026-03-16T17:42:39.530371Z"
+  },
+  {
+    "text_snippet": "Apple released its quarterly earnings report this morning, showing a 3% increase",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.4992,
+    "true_bias_score": 0.5064,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.6808,
+      "subjectivity_ratio": 0.3333,
+      "adjective_density": 0.1429,
+      "reading_grade_level": 8.5
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T17:43:10.603189Z"
+  },
+  {
+    "text_snippet": "Trump demands others help secure Strait of Hormuz, Japan and Australia say no pl",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1982,
+    "true_bias_score": 0.1982,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.4404,
+      "subjectivity_ratio": 0.0,
+      "adjective_density": 0.0,
+      "reading_grade_level": 17.1
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T18:18:20.758217Z"
+  },
+  {
+    "text_snippet": "Emirates Flight Returns To Thiruvananthapuram As Drone Strike Shuts Dubai Airpor",
+    "threat_level": "LOW",
+    "manipulation_score": 0.2944,
+    "true_bias_score": 0.3201,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.5574,
+      "subjectivity_ratio": 0.1154,
+      "adjective_density": 0.0323,
+      "reading_grade_level": 20.1
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T18:18:35.973107Z"
+  },
+  {
+    "text_snippet": "India-US trade deal signing on hold until new tariff structure is in place, says",
+    "threat_level": "LOW",
+    "manipulation_score": 0.2764,
+    "true_bias_score": 0.2974,
+    "breakdown": {
+      "propaganda_density": 0.4,
+      "sentiment_extremity": 0.0,
+      "subjectivity_ratio": 0.1957,
+      "adjective_density": 0.0714,
+      "reading_grade_level": 17.9
+    },
+    "flagged_words": [
+      "secret"
+    ],
+    "timestamp": "2026-03-16T18:18:51.955318Z"
+  },
+  {
+    "text_snippet": "Setback for Mahagathbandhan in Bihar as 4 MLAs skip voting in Rajya Sabha polls\n",
+    "threat_level": "LOW",
+    "manipulation_score": 0.2578,
+    "true_bias_score": 0.2973,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.4939,
+      "subjectivity_ratio": 0.125,
+      "adjective_density": 0.0263,
+      "reading_grade_level": 18.3
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T18:19:09.237137Z"
+  },
+  {
+    "text_snippet": "BOOM! Iran Shocks Israel, US With First 'SEJJIL MISSILE' Launch, American Defenc",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.5193,
+    "true_bias_score": 0.6274,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.5707,
+      "subjectivity_ratio": 0.6176,
+      "adjective_density": 0.1944,
+      "reading_grade_level": 12.5
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T18:19:21.816662Z"
+  },
+  {
+    "text_snippet": "US jets strike military facilities near trade zone in Iran's Chabahar: Report | ",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.3205,
+    "true_bias_score": 0.3684,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.2732,
+      "subjectivity_ratio": 0.4091,
+      "adjective_density": 0.1463,
+      "reading_grade_level": 19.1
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T18:19:42.501775Z"
+  },
+  {
+    "text_snippet": "US religious freedom panel recommends targeted sanctions on RSS, R&AW | India Ne",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.3648,
+    "true_bias_score": 0.4223,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.4678,
+      "subjectivity_ratio": 0.3529,
+      "adjective_density": 0.1143,
+      "reading_grade_level": 19.4
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T18:19:58.343909Z"
+  },
+  {
+    "text_snippet": "Modi Walks Fine Line Between Iran and US as War Hits Economy\nIndia's Prime Minis",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.3933,
+    "true_bias_score": 0.4683,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.7906,
+      "subjectivity_ratio": 0.1875,
+      "adjective_density": 0.0278,
+      "reading_grade_level": 17.1
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T18:20:24.340986Z"
+  },
+  {
+    "text_snippet": "Odisha: Ten killed in trauma centre ICU fire in Cuttack\nAll the victims of the f",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.4161,
+    "true_bias_score": 0.4161,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.9246,
+      "subjectivity_ratio": 0.0,
+      "adjective_density": 0.0,
+      "reading_grade_level": 12.2
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-16T18:20:41.024774Z"
+  },
+  {
+    "text_snippet": "At least 400 people killed, 250 injured in Pakistan strike on Afghanistan hospit",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.5064,
+    "true_bias_score": 0.5417,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.9538,
+      "subjectivity_ratio": 0.1875,
+      "adjective_density": 0.0571,
+      "reading_grade_level": 20.2
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-17T05:15:15.297727Z"
+  },
+  {
+    "text_snippet": "At least 400 people killed, 250 injured in Pakistan strike on Afghanistan hospit",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.5064,
+    "true_bias_score": 0.5417,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.9538,
+      "subjectivity_ratio": 0.1875,
+      "adjective_density": 0.0571,
+      "reading_grade_level": 20.2
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-17T05:23:49.846954Z"
+  },
+  {
+    "text_snippet": "At least 400 people killed, 250 injured in Pakistan strike on Afghanistan hospit",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.5064,
+    "true_bias_score": 0.5417,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.9538,
+      "subjectivity_ratio": 0.1875,
+      "adjective_density": 0.0571,
+      "reading_grade_level": 20.2
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-17T05:24:15.802502Z"
+  },
+  {
+    "text_snippet": "Rajya Sabha elections results: NDA dominates poll round, sweeps Bihar and bags t",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1174,
+    "true_bias_score": 0.2032,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.0516,
+      "subjectivity_ratio": 0.3,
+      "adjective_density": 0.0698,
+      "reading_grade_level": 19.1
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-17T05:24:35.223252Z"
+  },
+  {
+    "text_snippet": "At least 400 people killed, 250 injured in Pakistan strike on Afghanistan hospit",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.5064,
+    "true_bias_score": 0.5417,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.9538,
+      "subjectivity_ratio": 0.1875,
+      "adjective_density": 0.0571,
+      "reading_grade_level": 20.2
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-17T06:48:06.927539Z"
+  },
+  {
+    "text_snippet": "India terms Pakistan\u2019s bombing of drug rehab centre in Kabul a \u2018barbaric\u2019 act\nIn",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.4609,
+    "true_bias_score": 0.5143,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.743,
+      "subjectivity_ratio": 0.3,
+      "adjective_density": 0.0938,
+      "reading_grade_level": 20.1
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-17T15:12:33.753061Z"
+  },
+  {
+    "text_snippet": "Qatar's LNG Exports Disrupted For 5 Years In Iran War: These Nations Impacted\nTh",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.3442,
+    "true_bias_score": 0.3442,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.765,
+      "subjectivity_ratio": 0.0,
+      "adjective_density": 0.0,
+      "reading_grade_level": 16.8
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-20T05:31:37.593065Z"
+  },
+  {
+    "text_snippet": "Smoke rises after Iranian missile attack on Israel oil refinery in Haifa\nAn Iran",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.5737,
+    "true_bias_score": 0.6033,
+    "breakdown": {
+      "propaganda_density": 0.4,
+      "sentiment_extremity": 0.6249,
+      "subjectivity_ratio": 0.2368,
+      "adjective_density": 0.0833,
+      "reading_grade_level": 13.6
+    },
+    "flagged_words": [
+      "lie"
+    ],
+    "timestamp": "2026-03-20T05:33:19.451241Z"
+  },
+  {
+    "text_snippet": "Iran-Israel war LIVE: Kuwait's Mina Al-Ahmadi refinery hit by drone attack, fire",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.4592,
+    "true_bias_score": 0.4977,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.9393,
+      "subjectivity_ratio": 0.125,
+      "adjective_density": 0.027,
+      "reading_grade_level": 15.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-20T05:33:53.696293Z"
+  },
+  {
+    "text_snippet": "Nearly 100 ships pass the Hormuz Strait - who is getting through?\nJust under 100",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1157,
+    "true_bias_score": 0.225,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.0,
+      "subjectivity_ratio": 0.375,
+      "adjective_density": 0.0857,
+      "reading_grade_level": 8.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-20T05:34:20.117399Z"
+  },
+  {
+    "text_snippet": "Qatar's LNG Exports Disrupted For 5 Years In Iran War: These Nations Impacted\nTh",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.3442,
+    "true_bias_score": 0.3442,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.765,
+      "subjectivity_ratio": 0.0,
+      "adjective_density": 0.0,
+      "reading_grade_level": 16.8
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-20T10:25:34.665432Z"
+  },
+  {
+    "text_snippet": "The economy is facing a major recession",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.4068,
+    "true_bias_score": 0.4389,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.4754,
+      "subjectivity_ratio": 0.375,
+      "adjective_density": 0.1429,
+      "reading_grade_level": 10.7
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-20T10:42:54.466933Z"
+  },
+  {
+    "text_snippet": "Qatar's LNG Exports Disrupted For 5 Years In Iran War: These Nations Impacted\nTh",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.3442,
+    "true_bias_score": 0.3442,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.765,
+      "subjectivity_ratio": 0.0,
+      "adjective_density": 0.0,
+      "reading_grade_level": 16.8
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-20T10:56:56.439106Z"
+  },
+  {
+    "text_snippet": "The government has passed a controversial new tax bill that will impact millions",
+    "threat_level": "HIGH",
+    "manipulation_score": 0.686,
+    "true_bias_score": 0.677,
+    "breakdown": {
+      "propaganda_density": 0.4,
+      "sentiment_extremity": 0.5859,
+      "subjectivity_ratio": 0.3889,
+      "adjective_density": 0.1795,
+      "reading_grade_level": 13.6
+    },
+    "flagged_words": [
+      "lie"
+    ],
+    "timestamp": "2026-03-20T12:30:34.136483Z"
+  },
+  {
+    "text_snippet": "hello world",
+    "threat_level": "LOW",
+    "manipulation_score": 0.15,
+    "true_bias_score": 0.0,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.0,
+      "subjectivity_ratio": 0.0,
+      "adjective_density": 0.0,
+      "reading_grade_level": 2.9
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-20T12:30:47.836953Z"
+  },
+  {
+    "text_snippet": "The government has passed a controversial new tax bill that will impact millions",
+    "threat_level": "HIGH",
+    "manipulation_score": 0.686,
+    "true_bias_score": 0.677,
+    "breakdown": {
+      "propaganda_density": 0.4,
+      "sentiment_extremity": 0.5859,
+      "subjectivity_ratio": 0.3889,
+      "adjective_density": 0.1795,
+      "reading_grade_level": 13.6
+    },
+    "flagged_words": [
+      "lie"
+    ],
+    "timestamp": "2026-03-20T12:30:54.972291Z"
+  },
+  {
+    "text_snippet": "Apple reports record earnings despite global supply chain challenges and rising ",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.3336,
+    "true_bias_score": 0.3198,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.5106,
+      "subjectivity_ratio": 0.15,
+      "adjective_density": 0.0769,
+      "reading_grade_level": 11.3
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-20T12:43:20.137022Z"
+  },
+  {
+    "text_snippet": "Apple reports record earnings despite global supply chain challenges and rising ",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.3336,
+    "true_bias_score": 0.3198,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.5106,
+      "subjectivity_ratio": 0.15,
+      "adjective_density": 0.0769,
+      "reading_grade_level": 11.3
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-20T12:43:36.215832Z"
+  },
+  {
+    "text_snippet": "The government is implementing a new economic policy to combat rising inflation ",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.4585,
+    "true_bias_score": 0.4908,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.5574,
+      "subjectivity_ratio": 0.4,
+      "adjective_density": 0.1538,
+      "reading_grade_level": 18.6
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-20T14:10:56.235912Z"
+  },
+  {
+    "text_snippet": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    "threat_level": "LOW",
+    "manipulation_score": 0.15,
+    "true_bias_score": 0.0,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.0,
+      "subjectivity_ratio": 0.0,
+      "adjective_density": 0.0,
+      "reading_grade_level": -3.4
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-20T14:17:38.004596Z"
+  },
+  {
+    "text_snippet": "Analysis of the market ############################## with suspicious symbols.",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.3554,
+    "true_bias_score": 0.3125,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.3612,
+      "subjectivity_ratio": 0.25,
+      "adjective_density": 0.1429,
+      "reading_grade_level": 10.7
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-20T14:17:42.779824Z"
+  },
+  {
+    "text_snippet": "Normal news text about the economy and markets for rate limit testing.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1125,
+    "true_bias_score": 0.1125,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.0,
+      "subjectivity_ratio": 0.1875,
+      "adjective_density": 0.0833,
+      "reading_grade_level": 8.8
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-20T14:17:47.473609Z"
+  },
+  {
+    "text_snippet": "Normal news text about the economy and markets for rate limit testing.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1125,
+    "true_bias_score": 0.1125,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.0,
+      "subjectivity_ratio": 0.1875,
+      "adjective_density": 0.0833,
+      "reading_grade_level": 8.8
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-20T14:17:52.284750Z"
+  },
+  {
+    "text_snippet": "Normal news text about the economy and markets for rate limit testing.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1125,
+    "true_bias_score": 0.1125,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.0,
+      "subjectivity_ratio": 0.1875,
+      "adjective_density": 0.0833,
+      "reading_grade_level": 8.8
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-20T14:17:55.998429Z"
+  },
+  {
+    "text_snippet": "Normal news text about the economy and markets for rate limit testing.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1125,
+    "true_bias_score": 0.1125,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.0,
+      "subjectivity_ratio": 0.1875,
+      "adjective_density": 0.0833,
+      "reading_grade_level": 8.8
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-20T14:17:59.858548Z"
+  },
+  {
+    "text_snippet": "Normal news text about the economy and markets for rate limit testing.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1125,
+    "true_bias_score": 0.1125,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.0,
+      "subjectivity_ratio": 0.1875,
+      "adjective_density": 0.0833,
+      "reading_grade_level": 8.8
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-20T14:18:03.791508Z"
+  },
+  {
+    "text_snippet": "Normal news text about the economy and markets for rate limit testing.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1125,
+    "true_bias_score": 0.1125,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.0,
+      "subjectivity_ratio": 0.1875,
+      "adjective_density": 0.0833,
+      "reading_grade_level": 8.8
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-20T14:18:07.729523Z"
+  },
+  {
+    "text_snippet": "Normal news text about the economy and markets for rate limit testing.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1125,
+    "true_bias_score": 0.1125,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.0,
+      "subjectivity_ratio": 0.1875,
+      "adjective_density": 0.0833,
+      "reading_grade_level": 8.8
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-20T14:18:11.935490Z"
+  },
+  {
+    "text_snippet": "Normal news text about the economy and markets for rate limit testing.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1125,
+    "true_bias_score": 0.1125,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.0,
+      "subjectivity_ratio": 0.1875,
+      "adjective_density": 0.0833,
+      "reading_grade_level": 8.8
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-20T14:18:15.808453Z"
+  },
+  {
+    "text_snippet": "Normal news text about the economy and markets for rate limit testing.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1125,
+    "true_bias_score": 0.1125,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.0,
+      "subjectivity_ratio": 0.1875,
+      "adjective_density": 0.0833,
+      "reading_grade_level": 8.8
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-20T14:18:20.011177Z"
+  },
+  {
+    "text_snippet": "Normal news text about the economy and markets for rate limit testing.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1125,
+    "true_bias_score": 0.1125,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.0,
+      "subjectivity_ratio": 0.1875,
+      "adjective_density": 0.0833,
+      "reading_grade_level": 8.8
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-20T14:18:23.803893Z"
+  },
+  {
+    "text_snippet": "Normal news text about the economy and markets for rate limit testing.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1125,
+    "true_bias_score": 0.1125,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.0,
+      "subjectivity_ratio": 0.1875,
+      "adjective_density": 0.0833,
+      "reading_grade_level": 8.8
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-20T14:18:27.489748Z"
+  },
+  {
+    "text_snippet": "Normal news text about the economy and markets for rate limit testing.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1125,
+    "true_bias_score": 0.1125,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.0,
+      "subjectivity_ratio": 0.1875,
+      "adjective_density": 0.0833,
+      "reading_grade_level": 8.8
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-20T14:18:31.392478Z"
+  },
+  {
+    "text_snippet": "Normal news text about the economy and markets for rate limit testing.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1125,
+    "true_bias_score": 0.1125,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.0,
+      "subjectivity_ratio": 0.1875,
+      "adjective_density": 0.0833,
+      "reading_grade_level": 8.8
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-20T14:19:37.040631Z"
+  },
+  {
+    "text_snippet": "Normal news text about the economy and markets for rate limit testing.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1125,
+    "true_bias_score": 0.1125,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.0,
+      "subjectivity_ratio": 0.1875,
+      "adjective_density": 0.0833,
+      "reading_grade_level": 8.8
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-20T14:19:41.946416Z"
+  },
+  {
+    "text_snippet": "Normal news text about the economy and markets for rate limit testing.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1125,
+    "true_bias_score": 0.1125,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.0,
+      "subjectivity_ratio": 0.1875,
+      "adjective_density": 0.0833,
+      "reading_grade_level": 8.8
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-20T14:19:45.729435Z"
+  },
+  {
+    "text_snippet": "Normal news text about the economy and markets for rate limit testing.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1125,
+    "true_bias_score": 0.1125,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.0,
+      "subjectivity_ratio": 0.1875,
+      "adjective_density": 0.0833,
+      "reading_grade_level": 8.8
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-20T14:19:49.425456Z"
+  },
+  {
+    "text_snippet": "Normal news text about the economy and markets for rate limit testing.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1125,
+    "true_bias_score": 0.1125,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.0,
+      "subjectivity_ratio": 0.1875,
+      "adjective_density": 0.0833,
+      "reading_grade_level": 8.8
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-20T14:19:53.515933Z"
+  },
+  {
+    "text_snippet": "Normal news text about the economy and markets for rate limit testing.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1125,
+    "true_bias_score": 0.1125,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.0,
+      "subjectivity_ratio": 0.1875,
+      "adjective_density": 0.0833,
+      "reading_grade_level": 8.8
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-20T14:19:57.604424Z"
+  },
+  {
+    "text_snippet": "Normal news text about the economy and markets for rate limit testing.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1125,
+    "true_bias_score": 0.1125,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.0,
+      "subjectivity_ratio": 0.1875,
+      "adjective_density": 0.0833,
+      "reading_grade_level": 8.8
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-20T14:20:02.059227Z"
+  },
+  {
+    "text_snippet": "Normal news text about the economy and markets for rate limit testing.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1125,
+    "true_bias_score": 0.1125,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.0,
+      "subjectivity_ratio": 0.1875,
+      "adjective_density": 0.0833,
+      "reading_grade_level": 8.8
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-20T14:20:06.215642Z"
+  },
+  {
+    "text_snippet": "The latest economic indicators show a surprising resilience in the manufacturing",
+    "threat_level": "HIGH",
+    "manipulation_score": 0.6404,
+    "true_bias_score": 0.6404,
+    "breakdown": {
+      "propaganda_density": 0.4,
+      "sentiment_extremity": 0.2732,
+      "subjectivity_ratio": 0.5625,
+      "adjective_density": 0.25,
+      "reading_grade_level": 17.6
+    },
+    "flagged_words": [
+      "lie"
+    ],
+    "timestamp": "2026-03-20T14:30:22.477374Z"
+  },
+  {
+    "text_snippet": "The latest economic indicators show a surprising resilience in the manufacturing",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.5282,
+    "true_bias_score": 0.511,
+    "breakdown": {
+      "propaganda_density": 0.4,
+      "sentiment_extremity": 0.2023,
+      "subjectivity_ratio": 0.4,
+      "adjective_density": 0.1905,
+      "reading_grade_level": 18.4
+    },
+    "flagged_words": [
+      "lie"
+    ],
+    "timestamp": "2026-03-20T14:33:39.797886Z"
+  },
+  {
+    "text_snippet": "The latest economic indicators show a surprising resilience in the manufacturing",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.5282,
+    "true_bias_score": 0.511,
+    "breakdown": {
+      "propaganda_density": 0.4,
+      "sentiment_extremity": 0.2023,
+      "subjectivity_ratio": 0.4,
+      "adjective_density": 0.1905,
+      "reading_grade_level": 18.4
+    },
+    "flagged_words": [
+      "lie"
+    ],
+    "timestamp": "2026-03-20T14:41:59.790214Z"
+  },
+  {
+    "text_snippet": "The latest economic indicators show a surprising resilience in the manufacturing",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.5282,
+    "true_bias_score": 0.511,
+    "breakdown": {
+      "propaganda_density": 0.4,
+      "sentiment_extremity": 0.2023,
+      "subjectivity_ratio": 0.4,
+      "adjective_density": 0.1905,
+      "reading_grade_level": 18.4
+    },
+    "flagged_words": [
+      "lie"
+    ],
+    "timestamp": "2026-03-20T14:43:44.909718Z"
+  },
+  {
+    "text_snippet": "The government's new economic policy is designed to help only the rich elite, ca",
+    "threat_level": "HIGH",
+    "manipulation_score": 0.9194,
+    "true_bias_score": 0.9001,
+    "breakdown": {
+      "propaganda_density": 0.4,
+      "sentiment_extremity": 0.743,
+      "subjectivity_ratio": 0.6429,
+      "adjective_density": 0.3,
+      "reading_grade_level": 15.4
+    },
+    "flagged_words": [
+      "lie"
+    ],
+    "timestamp": "2026-03-20T15:24:49.245431Z"
+  },
+  {
+    "text_snippet": "The government's new economic policy is designed to help only the rich elite, ca",
+    "threat_level": "HIGH",
+    "manipulation_score": 0.9194,
+    "true_bias_score": 0.9001,
+    "breakdown": {
+      "propaganda_density": 0.4,
+      "sentiment_extremity": 0.743,
+      "subjectivity_ratio": 0.6429,
+      "adjective_density": 0.3,
+      "reading_grade_level": 15.4
+    },
+    "flagged_words": [
+      "lie"
+    ],
+    "timestamp": "2026-03-20T15:27:55.240027Z"
+  },
+  {
+    "text_snippet": "The government's new economic policy is designed to help only the rich elite, ca",
+    "threat_level": "HIGH",
+    "manipulation_score": 0.9194,
+    "true_bias_score": 0.9001,
+    "breakdown": {
+      "propaganda_density": 0.4,
+      "sentiment_extremity": 0.743,
+      "subjectivity_ratio": 0.6429,
+      "adjective_density": 0.3,
+      "reading_grade_level": 15.4
+    },
+    "flagged_words": [
+      "lie"
+    ],
+    "timestamp": "2026-03-20T15:28:46.213156Z"
+  },
+  {
+    "text_snippet": "The government's new economic policy is designed to help only the rich elite, ca",
+    "threat_level": "HIGH",
+    "manipulation_score": 0.9194,
+    "true_bias_score": 0.9001,
+    "breakdown": {
+      "propaganda_density": 0.4,
+      "sentiment_extremity": 0.743,
+      "subjectivity_ratio": 0.6429,
+      "adjective_density": 0.3,
+      "reading_grade_level": 15.4
+    },
+    "flagged_words": [
+      "lie"
+    ],
+    "timestamp": "2026-03-20T15:29:12.797423Z"
+  },
+  {
+    "text_snippet": "The government's new policy is a total disaster for ordinary people, only benefi",
+    "threat_level": "HIGH",
+    "manipulation_score": 0.6936,
+    "true_bias_score": 0.7056,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.659,
+      "subjectivity_ratio": 0.6818,
+      "adjective_density": 0.2941,
+      "reading_grade_level": 15.7
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-20T16:01:03.050138Z"
+  },
+  {
+    "text_snippet": "The government's new policy is a total disaster for ordinary people, only benefi",
+    "threat_level": "HIGH",
+    "manipulation_score": 0.6936,
+    "true_bias_score": 0.7056,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.659,
+      "subjectivity_ratio": 0.6818,
+      "adjective_density": 0.2941,
+      "reading_grade_level": 15.7
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-20T16:01:48.261597Z"
+  },
+  {
+    "text_snippet": "The government's new policy is a total disaster for ordinary people, only benefi",
+    "threat_level": "HIGH",
+    "manipulation_score": 0.6936,
+    "true_bias_score": 0.7056,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.659,
+      "subjectivity_ratio": 0.6818,
+      "adjective_density": 0.2941,
+      "reading_grade_level": 15.7
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-20T16:02:34.682142Z"
+  },
+  {
+    "text_snippet": "The government's new policy is a total disaster.The government's new policy is a",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.5966,
+    "true_bias_score": 0.6566,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.659,
+      "subjectivity_ratio": 0.6,
+      "adjective_density": 0.2222,
+      "reading_grade_level": 10.1
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-21T08:02:47.004652Z"
+  },
+  {
+    "text_snippet": "test",
+    "threat_level": "LOW",
+    "manipulation_score": 0.15,
+    "true_bias_score": 0.0,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.0,
+      "subjectivity_ratio": 0.0,
+      "adjective_density": 0.0,
+      "reading_grade_level": -3.4
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-21T08:16:41.649981Z"
+  },
+  {
+    "text_snippet": "The government is ruining the economy!",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1424,
+    "true_bias_score": 0.1424,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.3164,
+      "subjectivity_ratio": 0.0,
+      "adjective_density": 0.0,
+      "reading_grade_level": 12.3
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-21T08:28:29.668591Z"
+  },
+  {
+    "text_snippet": "Global warming causes extreme weather events like hurricanes.",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.5719,
+    "true_bias_score": 0.4915,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.5209,
+      "subjectivity_ratio": 0.4286,
+      "adjective_density": 0.25,
+      "reading_grade_level": 11.1
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-21T08:31:26.375398Z"
+  },
+  {
+    "text_snippet": "U.S. issues 30-day sanctions waiver for sale of Iranian oil at sea\nThe \u200bTrump ad",
+    "threat_level": "LOW",
+    "manipulation_score": 0.2336,
+    "true_bias_score": 0.2625,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.3612,
+      "subjectivity_ratio": 0.1667,
+      "adjective_density": 0.0526,
+      "reading_grade_level": 16.6
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-21T08:37:04.061501Z"
+  },
+  {
+    "text_snippet": "The economy is booming.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "true_bias_score": 0.0,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.0,
+      "subjectivity_ratio": 0.0,
+      "adjective_density": 0.0,
+      "reading_grade_level": 9.6
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-21T08:43:53.408268Z"
+  },
+  {
+    "text_snippet": "U.S. issues 30-day sanctions waiver for sale of Iranian oil at sea\nThe \u200bTrump ad",
+    "threat_level": "LOW",
+    "manipulation_score": 0.2336,
+    "true_bias_score": 0.2625,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.3612,
+      "subjectivity_ratio": 0.1667,
+      "adjective_density": 0.0526,
+      "reading_grade_level": 16.6
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-21T08:45:56.715395Z"
+  },
+  {
+    "text_snippet": "The moon is made of green cheese.",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.3429,
+    "true_bias_score": 0.225,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.0,
+      "subjectivity_ratio": 0.375,
+      "adjective_density": 0.1429,
+      "reading_grade_level": -1.1
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-21T08:49:09.854118Z"
+  },
+  {
+    "text_snippet": "test",
+    "threat_level": "LOW",
+    "manipulation_score": 0.15,
+    "true_bias_score": 0.0,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.0,
+      "subjectivity_ratio": 0.0,
+      "adjective_density": 0.0,
+      "reading_grade_level": -3.4
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-21T08:49:28.306340Z"
+  },
+  {
+    "text_snippet": "The economy is booming.The government claims this new law will help everyone, bu",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.5574,
+    "true_bias_score": 0.5895,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.81,
+      "subjectivity_ratio": 0.375,
+      "adjective_density": 0.1429,
+      "reading_grade_level": 6.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-21T08:50:18.105213Z"
+  },
+  {
+    "text_snippet": "U.S. issues 30-day sanctions waiver for sale of Iranian oil at sea\nThe \u200bTrump ad",
+    "threat_level": "LOW",
+    "manipulation_score": 0.2336,
+    "true_bias_score": 0.2625,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.3612,
+      "subjectivity_ratio": 0.1667,
+      "adjective_density": 0.0526,
+      "reading_grade_level": 16.6
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-21T08:52:19.081045Z"
+  },
+  {
+    "text_snippet": "Apple is launching the new iPhone 16 next week.",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.45,
+    "true_bias_score": 0.45,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.0,
+      "subjectivity_ratio": 0.75,
+      "adjective_density": 0.2222,
+      "reading_grade_level": 2.3
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-21T08:55:29.076680Z"
+  },
+  {
+    "text_snippet": "Apple iPhone news",
+    "threat_level": "LOW",
+    "manipulation_score": 0.15,
+    "true_bias_score": 0.0,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.0,
+      "subjectivity_ratio": 0.0,
+      "adjective_density": 0.0,
+      "reading_grade_level": 1.3
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-21T08:55:58.747961Z"
+  },
+  {
+    "text_snippet": "Elon Musk is discussing Tesla sales.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.15,
+    "true_bias_score": 0.0,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.0,
+      "subjectivity_ratio": 0.0,
+      "adjective_density": 0.0,
+      "reading_grade_level": 4.5
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-21T08:57:32.237007Z"
+  },
+  {
+    "text_snippet": "The economy is booming.The government claims this new law wilElon Musk discusses",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.5808,
+    "true_bias_score": 0.6058,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.8462,
+      "subjectivity_ratio": 0.375,
+      "adjective_density": 0.1481,
+      "reading_grade_level": 7.2
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-21T08:58:32.382275Z"
+  },
+  {
+    "text_snippet": "Elon Musk discusses Tesla growth in 2024",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.5147,
+    "true_bias_score": 0.4718,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.3818,
+      "subjectivity_ratio": 0.5,
+      "adjective_density": 0.1429,
+      "reading_grade_level": 4.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-21T08:59:00.711009Z"
+  },
+  {
+    "text_snippet": "Elon Musk discusses Tesla growth in 2024Apple iPhone 16 launch news",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.4445,
+    "true_bias_score": 0.3518,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.3818,
+      "subjectivity_ratio": 0.3,
+      "adjective_density": 0.0909,
+      "reading_grade_level": 4.8
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-21T09:03:14.814018Z"
+  },
+  {
+    "text_snippet": "Apple iPhone 16 launch news",
+    "threat_level": "LOW",
+    "manipulation_score": 0.15,
+    "true_bias_score": 0.0,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.0,
+      "subjectivity_ratio": 0.0,
+      "adjective_density": 0.0,
+      "reading_grade_level": 0.5
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-21T09:03:57.244725Z"
+  },
+  {
+    "text_snippet": "U.S. issues 30-day sanctions waiver for sale of Iranian oil at sea\nThe \u200bTrump ad",
+    "threat_level": "LOW",
+    "manipulation_score": 0.2336,
+    "true_bias_score": 0.2625,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.3612,
+      "subjectivity_ratio": 0.1667,
+      "adjective_density": 0.0526,
+      "reading_grade_level": 16.6
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-21T09:06:04.926752Z"
+  },
+  {
+    "text_snippet": "Trump: No Iranian leaders left to talk to, says war going \u2018extremely well\u2019\nUS Pr",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.4692,
+    "true_bias_score": 0.5521,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.7269,
+      "subjectivity_ratio": 0.375,
+      "adjective_density": 0.1053,
+      "reading_grade_level": 17.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-21T09:06:34.494453Z"
+  },
+  {
+    "text_snippet": "Global warming is causing the polar ice caps to melt at an alarming rate.",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.3009,
+    "true_bias_score": 0.3116,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.0258,
+      "subjectivity_ratio": 0.5,
+      "adjective_density": 0.2143,
+      "reading_grade_level": 6.7
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-21T09:09:32.423637Z"
+  },
+  {
+    "text_snippet": "U.S. issues 30-day sanctions waiver for sale of Iranian oil.",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1227,
+    "true_bias_score": 0.1286,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.0,
+      "subjectivity_ratio": 0.2143,
+      "adjective_density": 0.0909,
+      "reading_grade_level": 8.4
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-21T09:12:56.104394Z"
+  },
+  {
+    "text_snippet": "U.S. economy faces new challenges in 2024",
+    "threat_level": "LOW",
+    "manipulation_score": 0.2276,
+    "true_bias_score": 0.2597,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.0772,
+      "subjectivity_ratio": 0.375,
+      "adjective_density": 0.1429,
+      "reading_grade_level": 9.1
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-21T09:14:03.721278Z"
+  },
+  {
+    "text_snippet": "Trump: No Iranian leaders left to talk to, says war going \u2018extremely well\u2019\nUS Pr",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.4692,
+    "true_bias_score": 0.5521,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.7269,
+      "subjectivity_ratio": 0.375,
+      "adjective_density": 0.1053,
+      "reading_grade_level": 17.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-21T09:19:12.952846Z"
+  },
+  {
+    "text_snippet": "U.S. issues 30-day sanctions waiver for sale of Iranian oil at sea\nThe \u200bTrump ad",
+    "threat_level": "LOW",
+    "manipulation_score": 0.2336,
+    "true_bias_score": 0.2625,
+    "breakdown": {
+      "propaganda_density": 0.0,
+      "sentiment_extremity": 0.3612,
+      "subjectivity_ratio": 0.1667,
+      "adjective_density": 0.0526,
+      "reading_grade_level": 16.6
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-21T10:16:55.906912Z"
+  },
+  {
+    "text_snippet": "Government secretly plotting to destroy your freedom with fake news!",
+    "threat_level": "HIGH",
+    "manipulation_score": 0.9001,
+    "true_bias_score": 0.8873,
+    "breakdown": {
+      "propaganda_keywords": 1.0,
+      "emotional_language": 0.4003,
+      "adversarial_chars": 0.05,
+      "repetition_patterns": 0.0,
+      "subjectivity_ratio": 0.4286,
+      "reading_grade_level": 8.4
+    },
+    "flagged_words": [
+      "secret",
+      "fake",
+      "destroy"
+    ],
+    "timestamp": "2026-03-21T10:22:03.886554Z"
+  },
+  {
+    "text_snippet": "Government secretly plotting to destroy your freedom with fake news!",
+    "threat_level": "HIGH",
+    "manipulation_score": 0.9001,
+    "true_bias_score": 0.8873,
+    "breakdown": {
+      "propaganda_keywords": 1.0,
+      "emotional_language": 0.4003,
+      "adversarial_chars": 0.05,
+      "repetition_patterns": 0.0,
+      "subjectivity_ratio": 0.4286,
+      "reading_grade_level": 8.4
+    },
+    "flagged_words": [
+      "secret",
+      "fake",
+      "destroy"
+    ],
+    "timestamp": "2026-03-21T10:23:14.103023Z"
+  },
+  {
+    "text_snippet": "U.S. issues 30-day sanctions waiver for sale of Iranian oil at sea\nThe \u200bTrump ad",
+    "threat_level": "LOW",
+    "manipulation_score": 0.2336,
+    "true_bias_score": 0.2625,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.3612,
+      "adversarial_chars": 0.4,
+      "repetition_patterns": 0.2,
+      "subjectivity_ratio": 0.1667,
+      "reading_grade_level": 16.6
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-21T12:29:47.485693Z"
+  },
+  {
+    "text_snippet": "Iran Israel U.S. war updates LIVE: Yemen's Houthis enter Iran war with attacks o",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.432,
+    "true_bias_score": 0.492,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.8934,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.1163,
+      "subjectivity_ratio": 0.15,
+      "reading_grade_level": 9.2
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-29T15:15:54.061541Z"
+  },
+  {
+    "text_snippet": "Trump Says He Got 'Gift' From Iran's Ghalibaf, Hints At Kharg Seizure For Taking",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.335,
+    "true_bias_score": 0.4065,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.4588,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0256,
+      "subjectivity_ratio": 0.3333,
+      "reading_grade_level": 16.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-03-30T04:59:15.555981Z"
+  },
+  {
+    "text_snippet": "Will India attack Pakistan this year?",
+    "threat_level": "LOW",
+    "manipulation_score": 0.2145,
+    "true_bias_score": 0.2145,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.4767,
+      "adversarial_chars": 0.05,
+      "repetition_patterns": 0.0,
+      "subjectivity_ratio": 0.0,
+      "reading_grade_level": 8.4
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T15:13:42.739444Z"
+  },
+  {
+    "text_snippet": "West Bengal Elections 2026 Phase 1 Voting LIVE: State's voter turnout touches 89",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1646,
+    "true_bias_score": 0.2143,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.2432,
+      "subjectivity_ratio": 0.3571,
+      "reading_grade_level": 8.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T15:19:36.781499Z"
+  },
+  {
+    "text_snippet": "'It just happened': Rahul Meena 'remorseless', raped IRS officer's daughter whil",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.5686,
+    "true_bias_score": 0.6369,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.9709,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0541,
+      "subjectivity_ratio": 0.3333,
+      "reading_grade_level": 17.7
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T15:20:48.464635Z"
+  },
+  {
+    "text_snippet": "India is a \u2018hellhole\u2019: Trump shares commentator\u2019s views questioning US birthrigh",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0689,
+    "true_bias_score": 0.0689,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.1531,
+      "adversarial_chars": 0.3,
+      "repetition_patterns": 0.0286,
+      "subjectivity_ratio": 0.0,
+      "reading_grade_level": 10.8
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T15:21:06.653481Z"
+  },
+  {
+    "text_snippet": "Will India attack Pakistan this year?",
+    "threat_level": "LOW",
+    "manipulation_score": 0.2145,
+    "true_bias_score": 0.2145,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.4767,
+      "adversarial_chars": 0.05,
+      "repetition_patterns": 0.0,
+      "subjectivity_ratio": 0.0,
+      "reading_grade_level": 8.4
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T15:25:38.115086Z"
+  },
+  {
+    "text_snippet": "Will India attack Pakistan this year?",
+    "threat_level": "LOW",
+    "manipulation_score": 0.2145,
+    "true_bias_score": 0.2145,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.4767,
+      "adversarial_chars": 0.05,
+      "repetition_patterns": 0.0,
+      "subjectivity_ratio": 0.0,
+      "reading_grade_level": 8.4
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T15:29:20.669893Z"
+  },
+  {
+    "text_snippet": "Will India attack Pakistan this year?",
+    "threat_level": "LOW",
+    "manipulation_score": 0.2145,
+    "true_bias_score": 0.2145,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.4767,
+      "adversarial_chars": 0.05,
+      "repetition_patterns": 0.0,
+      "subjectivity_ratio": 0.0,
+      "reading_grade_level": 8.4
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T15:30:43.642722Z"
+  },
+  {
+    "text_snippet": "India is a hellhole: Trump shares commentator views",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1332,
+    "true_bias_score": 0.1332,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.296,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0,
+      "subjectivity_ratio": 0.0,
+      "reading_grade_level": 8.2
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T15:34:46.561510Z"
+  },
+  {
+    "text_snippet": "West Bengal Elections 2026 Phase 1 Voting LIVE: State's voter turnout touches 89",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1646,
+    "true_bias_score": 0.2143,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.2432,
+      "subjectivity_ratio": 0.3571,
+      "reading_grade_level": 8.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T15:38:08.582426Z"
+  },
+  {
+    "text_snippet": "West Bengal Elections 2026 Phase 1 Voting LIVE: State's voter turnout touches 89",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1646,
+    "true_bias_score": 0.2143,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.2432,
+      "subjectivity_ratio": 0.3571,
+      "reading_grade_level": 8.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T16:03:59.673599Z"
+  },
+  {
+    "text_snippet": "West Bengal Elections 2026 Phase 1 Voting LIVE: State's voter turnout touches 89",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1646,
+    "true_bias_score": 0.2143,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.2432,
+      "subjectivity_ratio": 0.3571,
+      "reading_grade_level": 8.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T16:27:14.174885Z"
+  },
+  {
+    "text_snippet": "West Bengal Elections 2026 Phase 1 Voting LIVE: State's voter turnout touches 89",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1646,
+    "true_bias_score": 0.2143,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.2432,
+      "subjectivity_ratio": 0.3571,
+      "reading_grade_level": 8.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T16:27:27.171733Z"
+  },
+  {
+    "text_snippet": "West Bengal Elections 2026 Phase 1 Voting LIVE: State's voter turnout touches 89",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1646,
+    "true_bias_score": 0.2143,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.2432,
+      "subjectivity_ratio": 0.3571,
+      "reading_grade_level": 8.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T16:27:39.065618Z"
+  },
+  {
+    "text_snippet": "West Bengal Elections 2026 Phase 1 Voting LIVE: State's voter turnout touches 89",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1646,
+    "true_bias_score": 0.2143,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.2432,
+      "subjectivity_ratio": 0.3571,
+      "reading_grade_level": 8.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T16:28:33.930386Z"
+  },
+  {
+    "text_snippet": "West Bengal Elections 2026 Phase 1 Voting LIVE: State's voter turnout touches 89",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1646,
+    "true_bias_score": 0.2143,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.2432,
+      "subjectivity_ratio": 0.3571,
+      "reading_grade_level": 8.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T16:28:48.948945Z"
+  },
+  {
+    "text_snippet": "West Bengal Elections 2026 Phase 1 Voting LIVE: State's voter turnout touches 89",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1646,
+    "true_bias_score": 0.2143,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.2432,
+      "subjectivity_ratio": 0.3571,
+      "reading_grade_level": 8.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T16:32:25.111710Z"
+  },
+  {
+    "text_snippet": "West Bengal Elections 2026 Phase 1 Voting LIVE: State's voter turnout touches 89",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1646,
+    "true_bias_score": 0.2143,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.2432,
+      "subjectivity_ratio": 0.3571,
+      "reading_grade_level": 8.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T16:32:56.335496Z"
+  },
+  {
+    "text_snippet": "West Bengal Elections 2026 Phase 1 Voting LIVE: State's voter turnout touches 89",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1646,
+    "true_bias_score": 0.2143,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.2432,
+      "subjectivity_ratio": 0.3571,
+      "reading_grade_level": 8.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T16:36:59.057702Z"
+  },
+  {
+    "text_snippet": "West Bengal Elections 2026 Phase 1 Voting LIVE: State's voter turnout touches 89",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1646,
+    "true_bias_score": 0.2143,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.2432,
+      "subjectivity_ratio": 0.3571,
+      "reading_grade_level": 8.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T16:37:22.033682Z"
+  },
+  {
+    "text_snippet": "West Bengal Elections 2026 Phase 1 Voting LIVE: State's voter turnout touches 89",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1646,
+    "true_bias_score": 0.2143,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.2432,
+      "subjectivity_ratio": 0.3571,
+      "reading_grade_level": 8.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T16:47:03.674038Z"
+  },
+  {
+    "text_snippet": "West Bengal Elections 2026 Phase 1 Voting LIVE: State's voter turnout touches 89",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1646,
+    "true_bias_score": 0.2143,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.2432,
+      "subjectivity_ratio": 0.3571,
+      "reading_grade_level": 8.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T16:47:32.074981Z"
+  },
+  {
+    "text_snippet": "West Bengal Elections 2026 Phase 1 Voting LIVE: State's voter turnout touches 89",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1646,
+    "true_bias_score": 0.2143,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.2432,
+      "subjectivity_ratio": 0.3571,
+      "reading_grade_level": 8.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T16:47:46.823046Z"
+  },
+  {
+    "text_snippet": "West Bengal Elections 2026 Phase 1 Voting LIVE: State's voter turnout touches 89",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1646,
+    "true_bias_score": 0.2143,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.2432,
+      "subjectivity_ratio": 0.3571,
+      "reading_grade_level": 8.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T16:57:26.030441Z"
+  },
+  {
+    "text_snippet": "West Bengal Elections 2026 Phase 1 Voting LIVE: State's voter turnout touches 89",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1646,
+    "true_bias_score": 0.2143,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.2432,
+      "subjectivity_ratio": 0.3571,
+      "reading_grade_level": 8.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T16:57:53.320149Z"
+  },
+  {
+    "text_snippet": "West Bengal Elections 2026 Phase 1 Voting LIVE: State's voter turnout touches 89",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1646,
+    "true_bias_score": 0.2143,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.2432,
+      "subjectivity_ratio": 0.3571,
+      "reading_grade_level": 8.0
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T16:58:35.821153Z"
+  },
+  {
+    "text_snippet": "'Trump has said India a great country': US in firefight mode after president's '",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.38,
+    "true_bias_score": 0.4889,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.6249,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.1622,
+      "subjectivity_ratio": 0.3462,
+      "reading_grade_level": 18.6
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T17:29:49.146331Z"
+  },
+  {
+    "text_snippet": "'Trump has said India a great country': US in firefight mode after president's '",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.38,
+    "true_bias_score": 0.4889,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.6249,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.1622,
+      "subjectivity_ratio": 0.3462,
+      "reading_grade_level": 18.6
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T17:33:47.415958Z"
+  },
+  {
+    "text_snippet": "'Trump has said India a great country': US in firefight mode after president's '",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.38,
+    "true_bias_score": 0.4889,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.6249,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.1622,
+      "subjectivity_ratio": 0.3462,
+      "reading_grade_level": 18.6
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T17:38:15.087481Z"
+  },
+  {
+    "text_snippet": "'Trump has said India a great country': US in firefight mode after president's '",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.38,
+    "true_bias_score": 0.4889,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.6249,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.1622,
+      "subjectivity_ratio": 0.3462,
+      "reading_grade_level": 18.6
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T17:45:03.716000Z"
+  },
+  {
+    "text_snippet": "'Trump has said India a great country': US in firefight mode after president's '",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.38,
+    "true_bias_score": 0.4889,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.6249,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.1622,
+      "subjectivity_ratio": 0.3462,
+      "reading_grade_level": 18.6
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T17:45:13.142901Z"
+  },
+  {
+    "text_snippet": "'Trump has said India a great country': US in firefight mode after president's '",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.38,
+    "true_bias_score": 0.4889,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.6249,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.1622,
+      "subjectivity_ratio": 0.3462,
+      "reading_grade_level": 18.6
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T17:45:48.064480Z"
+  },
+  {
+    "text_snippet": "'Trump has said India a great country': US in firefight mode after president's '",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.38,
+    "true_bias_score": 0.4889,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.6249,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.1622,
+      "subjectivity_ratio": 0.3462,
+      "reading_grade_level": 18.6
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T17:53:54.603868Z"
+  },
+  {
+    "text_snippet": "'Trump has said India a great country': US in firefight mode after president's '",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.38,
+    "true_bias_score": 0.4889,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.6249,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.1622,
+      "subjectivity_ratio": 0.3462,
+      "reading_grade_level": 18.6
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T17:56:58.860127Z"
+  },
+  {
+    "text_snippet": "'Trump has said India a great country': US in firefight mode after president's '",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.38,
+    "true_bias_score": 0.4889,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.6249,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.1622,
+      "subjectivity_ratio": 0.3462,
+      "reading_grade_level": 18.6
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T17:57:23.041970Z"
+  },
+  {
+    "text_snippet": "'Trump has said India a great country': US in firefight mode after president's '",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.38,
+    "true_bias_score": 0.4889,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.6249,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.1622,
+      "subjectivity_ratio": 0.3462,
+      "reading_grade_level": 18.6
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T18:04:59.981181Z"
+  },
+  {
+    "text_snippet": "'Trump has said India a great country': US in firefight mode after president's '",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.38,
+    "true_bias_score": 0.4889,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.6249,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.1622,
+      "subjectivity_ratio": 0.3462,
+      "reading_grade_level": 18.6
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T18:05:12.274730Z"
+  },
+  {
+    "text_snippet": "'Trump has said India a great country': US in firefight mode after president's '",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.38,
+    "true_bias_score": 0.4889,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.6249,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.1622,
+      "subjectivity_ratio": 0.3462,
+      "reading_grade_level": 18.6
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T18:05:21.745044Z"
+  },
+  {
+    "text_snippet": "'Trump has said India a great country': US in firefight mode after president's '",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.38,
+    "true_bias_score": 0.4889,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.6249,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.1622,
+      "subjectivity_ratio": 0.3462,
+      "reading_grade_level": 18.6
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T18:05:33.766429Z"
+  }
+]

@@ -47,6 +47,17 @@ vocab = {
     }
 }
 
+# Shared vocabulary pool that all categories pull from (introduces realistic overlap)
+shared_vocab = {
+    "subjects": ["The new policy", "Official reports", "Public response", "Experts", "International observers", "Leading analysts", "The latest data", "Community leaders", "Research", "Media coverage"],
+    "verbs": ["have indicated", "suggest that", "might lead to", "reveal that", "point towards", "are influenced by", "reflect", "demonstrate"],
+    "objects": ["future developments.", "significant changes.", "widespread impact.", "long-term consequences.", "shifting trends.", "the current situation.", "public perception."],
+    "noise": [
+        "In a rapidly changing world,", "According to various sources,", "It remains to be seen if", "Interestingly enough,", "While some disagree,", 
+        "Notably,", "On the other hand,", "In conclusion,"
+    ]
+}
+
 templates = [
     "{subject} {verb} {object}",
     "{subject} {verb} the {adjective} {object}",
@@ -56,6 +67,7 @@ templates = [
     "Experts warn that {subject} {verb} {object}",
     "We are seeing that {subject} {verb} {object} {context}",
     "The reality is that the {adjective} {subject} {verb} {object}",
+    "Common ground exists where {subject} {verb} {object}", # Neutral template
 ]
 
 propaganda_injections = [
@@ -70,45 +82,60 @@ def generate_dataset(num_samples=50000):
     data = []
     keys = list(vocab.keys())
     
-    # Pre-generate variations to ensure we have exactly num_samples
+    print(f"Generating {num_samples} samples with Realism Calibration...")
+    
     for _ in range(num_samples):
-        label = random.choice(keys)
-        v = vocab[label]
-        
-        subject = random.choice(v["subjects"])
-        verb = random.choice(v["verbs"])
-        obj = random.choice(v["objects"])
+        # 1. Select a random frame but allow for "fuzzy" cross-over
+        primary_label = random.choice(keys)
+        # 20% chance to pull vocabulary from a DIFFERENT frame while keeping the primary label (Ambiguity)
+        if random.random() < 0.20:
+            secondary_label = random.choice(keys)
+            v = vocab[secondary_label]
+        else:
+            v = vocab[primary_label]
+            
+        # 2. Mix in Shared Vocab (30% chance per slot) to reduce keyword isolation
+        subject = random.choice(shared_vocab["subjects"]) if random.random() < 0.3 else random.choice(v["subjects"])
+        verb = random.choice(shared_vocab["verbs"]) if random.random() < 0.3 else random.choice(v["verbs"])
+        obj = random.choice(shared_vocab["objects"]) if random.random() < 0.3 else random.choice(v["objects"])
         adj = random.choice(v["adjectives"])
         context = random.choice(v["contexts"])
         
         template = random.choice(templates)
         
-        # Format string manually to handle variables
-        # Using string replacement to keep it dynamic and avoid missing keys
+        # 3. Text Assembly
         text = template.replace("{subject}", subject) \
                        .replace("{verb}", verb) \
                        .replace("{object}", obj) \
                        .replace("{adjective}", adj) \
                        .replace("{context}", context)
         
-        # Capitalize first letter ensuring grammar somewhat holds
+        # 4. Add Ambient Noise (15% chance at start/end)
+        if random.random() < 0.15:
+            noise = random.choice(shared_vocab["noise"])
+            text = f"{noise} {text}" if random.random() < 0.5 else f"{text} {noise}"
+
+        # Capitalize and clean
         text = text[0].upper() + text[1:]
+        if not text.endswith('.'): text += '.'
         
-        # 10% chance to inject propaganda/manipulation keywords for cybersecurity domain training
+        # Remove any occurrence of the label name itself (Explicit Cheat Prevention)
+        for label_name in keys:
+            text = text.replace(label_name, "the industry")
+            text = text.replace(label_name.lower(), "the sector")
+
+        # 5. 10% Propaganda Injection
         if random.random() < 0.1:
             text += random.choice(propaganda_injections)
             
-        data.append({"text": text, "label": label})
+        data.append({"text": text, "label": primary_label})
         
-    # Shuffle the dataset
     random.shuffle(data)
-    
     return pd.DataFrame(data)
 
 if __name__ == "__main__":
-    print("Generating massive dataset (50,000+ samples)...")
     df = generate_dataset(55000)
     df.to_csv("dataset.csv", index=False)
-    print(f"Generated {len(df)} diverse samples and saved to dataset.csv")
+    print(f"Generated {len(df)} realistic samples and saved to dataset.csv")
     print("\nDataset Distribution:")
     print(df["label"].value_counts())

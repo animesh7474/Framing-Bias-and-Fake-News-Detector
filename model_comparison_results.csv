@@ -1,0 +1,5 @@
+Model,Accuracy,Holdout_Accuracy,Time,Std_Dev
+Logistic Regression,0.8252,0.8,7.85,0.0235
+SVM,0.8184,0.79,120.221,0.0183
+Random Forest,0.8052,0.78,20.974,0.0224
+Gradient Boosting,0.82,0.796,205.899,0.0184

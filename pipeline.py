@@ -1,70 +1,39 @@
 """
-pipeline.py — 4-stage analysis pipeline: ML → News → LLM → Combined Output.
+pipeline.py — 4-stage analysis pipeline orchestrator.
 Domain: NLP + Big Data + Computer Networks + AI Cybersecurity
 """
 
-import joblib
-from datetime import datetime
-from config import MODEL_PATH
-from news_fetcher import fetch_related_news, format_news_for_llm
-from threat_analyzer import ThreatAnalyzer
-from llm_client import LLMClient
+from datetime import datetime, timezone
 from logger import get_logger
+
+# Import Services
+from services.ml_service import predict, get_explainable_keywords
+from services.nlp_service import NLPPipeline
+from services.news_service import fetch_related_news
+from services.llm_service import LLMService
 
 log = get_logger("pipeline")
 
-_model = None
-_threat_analyzer = ThreatAnalyzer()
-_llm_client = LLMClient()
+# Initialize persistent service instances
+_threat_analyzer = NLPPipeline()
+_llm_service = LLMService()
 
-
-def _get_model():
-    global _model
-    if _model is None:
-        _model = joblib.load(MODEL_PATH)
-        log.info("ML model loaded into pipeline.")
-    return _model
-
-
-def run_full_analysis(text: str) -> dict:
+async def run_full_analysis(text: str, eli5: bool = False) -> dict:
     """
-    Full 4-stage pipeline:
-      Stage 1 — ML Model: frame classification + confidence
-      Stage 2 — News Fetcher: live related news from DuckDuckGo
-      Stage 3 — LLM: structured report using ML scores + news context
-      Stage 4 — Combine: unified response dict
-
-    Returns: complete analysis dict ready to serve via API.
+    Full 4-stage pipeline (Async Orchestration):
+      Stage 1 — ML Service: classification + confidence + keywords
+      Stage 2 — News Service: async DDG search for context
+      Stage 3 — NLP Service: deep threat analysis (manipulation/bias)
+      Stage 4 — LLM Service: async comparative report
     """
-    started = datetime.utcnow()
-    log.info(f"Pipeline started: {text[:60]}")
+    started = datetime.now(timezone.utc)
+    log.info(f"Pipeline [SERVICE-LAYER] started: {text[:60]}")
 
-    # ── Stage 1: ML Model ─────────────────────────────────────────────────────
-    log.info("[Stage 1] Running ML model...")
-    model = _get_model()
-    proba  = model.predict_proba([text])[0]
-    labels = list(model.classes_)
-    pred   = labels[proba.argmax()]
-    conf   = float(proba.max())
-    all_conf = {labels[i]: round(float(proba[i]), 4) for i in range(len(labels))}
+    # ── Stage 1: ML Inference ────────────────────────────────────────────────
+    pred, conf, all_conf, model_version = predict(text)
+    lime_words = get_explainable_keywords(text, pred)
 
-    # LIME-style word weights (lightweight approximation)
-    words = text.split()
-    frame_keywords = {
-        "Economic":    ["economy","inflation","tax","budget","market","trade","jobs","recession","financial","investment","growth","cost"],
-        "Political":   ["government","election","policy","senate","vote","parliament","law","campaign","legislation","president","minister"],
-        "Social":      ["community","education","health","equality","rights","welfare","family","culture","discrimination","protest","society"],
-        "Security":    ["war","military","conflict","crime","border","attack","defense","threat","terrorism","violence","forces","troops","nuclear"],
-        "Environment": ["climate","pollution","energy","wildlife","conservation","warming","carbon","emissions","nature","forest","drought","flood"],
-    }
-    fkws = frame_keywords.get(pred, [])
-    lime_words = []
-    for w in words:
-        c = w.lower().strip(".,!?\"'")
-        score = 0.4 + round(__import__("random").random() * 0.4, 3) if any(k in c for k in fkws) else round(__import__("random").random() * 0.2 - 0.1, 3)
-        lime_words.append({"word": w, "score": score})
-
-    # Threat analysis
+    # ── Stage 2: NLP Threat Analysis ─────────────────────────────────────────
     threat = _threat_analyzer.analyze(text)
 
     ml_result = {
@@ -75,30 +44,23 @@ def run_full_analysis(text: str) -> dict:
         "threat_analysis":  threat,
     }
 
-    # ── Stage 2: News Fetcher ─────────────────────────────────────────────────
-    log.info("[Stage 2] Fetching related news...")
-    articles = fetch_related_news(text, max_results=4)
-    news_context = format_news_for_llm(articles)
+    # ── Stage 3: News Context (ASYNC) ────────────────────────────────────────
+    log.info("[Stage 3] Fetching news context...")
+    articles = await fetch_related_news(text, max_results=4)
 
-    # ── Stage 3: LLM Analysis ─────────────────────────────────────────────────
-    log.info("[Stage 3] Running LLM analysis...")
-    llm_result = _llm_client.analyze(text, ml_result, news_context)
+    # ── Stage 4: LLM Analysis (ASYNC) ────────────────────────────────────────
+    log.info("[Stage 4] Generating LLM comparison report...")
+    llm_result = await _llm_service.analyze_article(text, pred, conf, articles, eli5=eli5)
 
-    # ── Stage 4: Combine ──────────────────────────────────────────────────────
-    elapsed = (datetime.utcnow() - started).total_seconds()
-    log.info(f"[Stage 4] Pipeline complete in {elapsed:.2f}s")
+    # ── Final Composition ───────────────────────────────────────────────────
+    elapsed = (datetime.now(timezone.utc) - started).total_seconds()
+    log.info(f"Pipeline [SERVICE-LAYER] complete in {elapsed:.2f}s")
 
     return {
         "text":          text,
         "timestamp":     started.isoformat() + "Z",
         "elapsed_s":     round(elapsed, 2),
-
-        # ML Model outputs (primary)
-        "ml": ml_result,
-
-        # Live news context
+        "ml":            ml_result,
         "related_news":  articles,
-
-        # LLM analysis (explained output)
         "llm_analysis":  llm_result,
     }

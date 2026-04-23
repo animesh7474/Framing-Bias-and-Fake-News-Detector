@@ -1,0 +1,66 @@
+[
+  {
+    "timestamp": "2026-03-20T13:05:25.518602Z",
+    "version": 1,
+    "samples_used": 2,
+    "total_training_size": 2500,
+    "new_accuracy": 0.8224,
+    "current_accuracy": 0.8252,
+    "improvement": -0.0028,
+    "promoted": true,
+    "elapsed_s": 0.96
+  },
+  {
+    "timestamp": "2026-03-20T13:33:58.253604Z",
+    "version": 2,
+    "samples_used": 2,
+    "total_training_size": 2500,
+    "new_accuracy": 0.8224,
+    "current_accuracy": 0.8252,
+    "improvement": -0.0028,
+    "promoted": true,
+    "elapsed_s": 2.24
+  },
+  {
+    "timestamp": "2026-03-20T14:00:35.783527Z",
+    "version": 3,
+    "training_size": 2500,
+    "metrics": {
+      "accuracy": 0.832,
+      "f1_score": 0.8319,
+      "precision": 0.8326,
+      "recall": 0.832,
+      "cv_accuracy": 0.8145
+    },
+    "previous_accuracy": 0.8224,
+    "improvement": 0.0096,
+    "promoted": true,
+    "elapsed_s": 0.69
+  },
+  {
+    "timestamp": "2026-03-20T14:04:08.397866Z",
+    "version": 3,
+    "training_size": 2500,
+    "sample_breakdown": {
+      "priorities": {
+        "MEDIUM": 1,
+        "HIGH": 1
+      },
+      "sources": {
+        "uncertainty_sampling": 1,
+        "user_feedback": 1
+      }
+    },
+    "metrics": {
+      "accuracy": 0.832,
+      "f1_score": 0.8319,
+      "precision": 0.8326,
+      "recall": 0.832,
+      "cv_accuracy": 0.8145
+    },
+    "previous_accuracy": 0.832,
+    "improvement": 0.0,
+    "promoted": true,
+    "elapsed_s": 0.88
+  }
+]

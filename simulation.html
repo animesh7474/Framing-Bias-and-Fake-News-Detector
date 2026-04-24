@@ -701,17 +701,30 @@
     }
 
     /* ── Scores ── */
-    .score-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+    .score-grid { 
+      display: grid; 
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+      gap: 20px; 
+      margin-bottom: 32px;
+    }
     .score-card {
       background: #fff;
-      padding: 24px;
+      padding: 32px 24px;
       border: 1px solid var(--border);
       border-radius: var(--radius);
       text-align: center;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 180px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+      overflow: hidden;
     }
-
-    .score-num { font-size: 36px; font-weight: 800; margin-bottom: 4px; }
-    .score-sub { font-size: 12px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; }
+    .score-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.06); }
+    .score-num { font-size: 38px; font-weight: 800; margin-bottom: 8px; color: var(--text-main); line-height: 1.1; overflow: hidden; text-overflow: ellipsis; }
+    .score-sub { font-size: 11px; font-weight: 800; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; }
 
     /* ── Models ── */
     .chart-wrap { position: relative; height: 400px; }
@@ -776,25 +789,6 @@
       </div>
     </div>
 
-    <!-- STATS -->
-    <div class="stats-row">
-      <div class="stat glass">
-        <div class="stat-n" style="color:var(--primary)" id="sTotal">—</div>
-        <div class="stat-l">Total Dataset</div>
-      </div>
-      <div class="stat glass">
-        <div class="stat-n" style="color:var(--secondary)" id="sVer">v1.0</div>
-        <div class="stat-l">Active Version</div>
-      </div>
-      <div class="stat glass">
-        <div class="stat-n" style="color:var(--success)" id="sBest">—</div>
-        <div class="stat-l">Accuracy</div>
-      </div>
-      <div class="stat glass">
-        <div class="stat-n" style="color:var(--warning)" id="sDrift">0.0%</div>
-        <div class="stat-l">Model Drift</div>
-      </div>
-    </div>
 
     <!-- TABS -->
     <div class="tabs">
@@ -1220,10 +1214,10 @@
       renderThreat(ml.threat_analysis || {});
       
       // Update Version Badge from Result
-      if (d.model_version) {
-        document.getElementById("vBadge").textContent = `Model v${d.model_version}`;
-        document.getElementById("sVer").textContent = `v${d.model_version}`;
-      }
+      const vB = document.getElementById("vBadge");
+      const sV = document.getElementById("sVer");
+      if (vB && d.model_version) vB.textContent = `Model v${d.model_version}`;
+      if (sV && d.model_version) sV.textContent = `v${d.model_version}`;
 
       // Show feedback widget
       document.getElementById("feedbackCard").style.display = "block";
@@ -1289,13 +1283,25 @@
         { l: "Manipulation", v: llm.emotional_manipulation_score, i: "activity" }
       ];
       
-      grid.innerHTML = metrics.map(m => `
-        <div class="score-card">
-          <i data-feather="${m.i}" style="margin-bottom:12px;color:var(--primary)"></i>
-          <div class="score-num">${m.v ?? 0}%</div>
-          <div class="score-sub">${m.l} ${isFallback ? '<span title="Heuristic estimate (LLM Offline)" style="color:var(--warning);cursor:help">ⓘ</span>' : ''}</div>
-        </div>
-      `).join("");
+      grid.innerHTML = metrics.map(m => {
+        // Robust numeric extraction in case LLM returns text in score fields
+        let val = m.v;
+        if (typeof val === "string") {
+          const match = val.match(/\d+/);
+          val = match ? parseInt(match[0]) : 0;
+        } else {
+          val = parseInt(val) || 0;
+        }
+        if (val > 100) val = 100;
+
+        return `
+          <div class="score-card">
+            <i data-feather="${m.i}" style="margin-bottom:12px;color:var(--primary)"></i>
+            <div class="score-num">${val}%</div>
+            <div class="score-sub">${m.l} ${isFallback ? '<span title="Heuristic estimate (LLM Offline)" style="color:var(--warning);cursor:help">ⓘ</span>' : ''}</div>
+          </div>
+        `;
+      }).join("");
 
       const items = [
         { id: "aiBias", label: "Framing Analysis", key: "framing_bias_explanation", icon: "type" },
@@ -1653,8 +1659,8 @@
         
         // Versioning
         const ver = d.current_version || "1.0";
-        document.getElementById("sVer").textContent = `v${ver}`;
-        document.getElementById("vBadge").textContent = `Model v${ver}`;
+        if(document.getElementById("sVer")) document.getElementById("sVer").textContent = `v${ver}`;
+        if(document.getElementById("vBadge")) document.getElementById("vBadge").textContent = `Model v${ver}`;
 
         // Drift
         const drift = d.drift || {};

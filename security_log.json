@@ -3712,5 +3712,101 @@
     },
     "flagged_words": [],
     "timestamp": "2026-04-23T18:05:33.766429Z"
+  },
+  {
+    "text_snippet": "'Trump has said India a great country': US in firefight mode after president's '",
+    "threat_level": "MEDIUM",
+    "manipulation_score": 0.38,
+    "true_bias_score": 0.4889,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.6249,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.1622,
+      "subjectivity_ratio": 0.3462,
+      "reading_grade_level": 18.6
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T18:33:45.853555Z"
+  },
+  {
+    "text_snippet": "West Bengal Elections 2026 LIVE: First phase of polling complete; estimated vote",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1385,
+    "true_bias_score": 0.225,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.1842,
+      "subjectivity_ratio": 0.375,
+      "reading_grade_level": 19.1
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T18:34:19.159780Z"
+  },
+  {
+    "text_snippet": "West Bengal Elections 2026 LIVE: First phase of polling complete; estimated vote",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1385,
+    "true_bias_score": 0.225,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.1842,
+      "subjectivity_ratio": 0.375,
+      "reading_grade_level": 19.1
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T18:34:32.837095Z"
+  },
+  {
+    "text_snippet": "Test article",
+    "threat_level": "LOW",
+    "manipulation_score": 0.0,
+    "true_bias_score": 0.0,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.0,
+      "subjectivity_ratio": 0.0,
+      "reading_grade_level": 8.8
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T18:36:12.125664Z"
+  },
+  {
+    "text_snippet": "West Bengal Elections 2026 LIVE: First phase of polling complete; estimated vote",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1385,
+    "true_bias_score": 0.225,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.1842,
+      "subjectivity_ratio": 0.375,
+      "reading_grade_level": 19.1
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T18:40:49.628390Z"
+  },
+  {
+    "text_snippet": "West Bengal Elections 2026 LIVE: First phase of polling complete; estimated vote",
+    "threat_level": "LOW",
+    "manipulation_score": 0.1385,
+    "true_bias_score": 0.225,
+    "breakdown": {
+      "propaganda_keywords": 0.0,
+      "emotional_language": 0.0,
+      "adversarial_chars": 0.0,
+      "repetition_patterns": 0.1842,
+      "subjectivity_ratio": 0.375,
+      "reading_grade_level": 19.1
+    },
+    "flagged_words": [],
+    "timestamp": "2026-04-23T18:44:55.438139Z"
   }
 ]

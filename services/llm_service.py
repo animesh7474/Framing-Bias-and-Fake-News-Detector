@@ -51,16 +51,16 @@ class LLMService:
            - "verdict": "Likely Bias", "Authentic", or "Needs Verification".
            - "explanation": Brief reasoning for the verdict.
            - "eli5_explanation": A very simple, 2-sentence explanation for a child.
-           - "framing_bias_score": Integer 0-100.
-           - "fake_news_likelihood": Integer 0-100.
-           - "emotional_manipulation_score": Integer 0-100.
+           - "framing_bias_score": Integer 0-100 (STRICTLY NUMERIC).
+           - "fake_news_likelihood": Integer 0-100 (STRICTLY NUMERIC).
+           - "emotional_manipulation_score": Integer 0-100 (STRICTLY NUMERIC).
            - "framing_bias_explanation": Detailed paragraph.
            - "fake_news_analysis": Detailed paragraph.
            - "emotional_manipulation_analysis": Detailed paragraph.
            - "agenda_detection": Detailed paragraph.
            - "factual_gaps": Detailed paragraph.
         
-        Strictly return ONLY JSON.
+        Strictly return ONLY JSON. Do not include conversational text outside the JSON block.
         """
 
         try:

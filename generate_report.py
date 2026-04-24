@@ -372,12 +372,12 @@ def create_report():
             "Service, Application, and Client layers. This ensures that the ML and LLM services can be updated or "
             "swapped without affecting the frontend dashboard."
         )
-        doc.add_paragraph("[INSERT ARCHITECTURE DIAGRAM HERE]")
-        doc.add_paragraph(
-            "Description: The flow starts from the Web Dashboard (Client), hits the Flask Root (API), which "
-            "then triggers the Pipeline Orchestrator. The orchestrator fans out requests to the ML Service, "
-            "News Service, and LLM Service before aggregating the final JSON response.", style='Intense Quote'
-        )
+        if os.path.exists("assets/architecture.png"):
+            doc.add_picture("assets/architecture.png", width=Inches(6))
+            p = doc.add_paragraph("Fig 4.1: System Architecture Diagram")
+            p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        else:
+            doc.add_paragraph("[SYSTEM ARCHITECTURE DIAGRAM PLACEHOLDER]")
         
         doc.add_heading('4.2 Hardware Requirement', 3)
         doc.add_paragraph("- Processor: Intel i5 / i7 (10th Gen+) or AMD Ryzen 5+\n- RAM: 8GB (Minimum), 16GB (Recommended)\n- Storage: 1GB free space\n- Network: High-speed internet for Cloud LLM inferencing.")
@@ -393,7 +393,12 @@ def create_report():
             "3. Stage 2 & 3 (Async): Parallel fetching of live news context and LLM analysis.\n"
             "4. Post-processing: Formatting JSON and updating the security intelligence log."
         )
-        doc.add_paragraph("[INSERT PIPELINE FLOWCHART HERE]")
+        if os.path.exists("assets/flowchart.png"):
+            doc.add_picture("assets/flowchart.png", width=Inches(6))
+            p = doc.add_paragraph("Fig 4.4: 4-Stage AI Pipeline Flowchart")
+            p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        else:
+            doc.add_paragraph("[PIPELINE FLOWCHART PLACEHOLDER]")
         
         doc.add_heading('4.5 Database Design', 3)
         doc.add_paragraph(
@@ -440,7 +445,13 @@ def create_report():
             "test samples that the local ML model flagged but could not explain."
         )
         
-        doc.add_heading('Performance Metrics', 3)
+        doc.add_heading('6.2 Visualization of Results', 3)
+        if os.path.exists("assets/graph.png"):
+            doc.add_picture("assets/graph.png", width=Inches(5))
+            p = doc.add_paragraph("Fig 6.1: Model Accuracy Over Versions")
+            p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        
+        doc.add_heading('6.3 Performance Metrics', 3)
         table = doc.add_table(rows=1, cols=2)
         table.style = 'Table Grid'
         hdr = table.rows[0].cells
@@ -521,7 +532,7 @@ def create_report():
     add_conclusion()
     add_appendix()
 
-    filename = "Final_Project_Report_Refined.docx"
+    filename = "Final_Project_Report_v2.docx"
     doc.save(filename)
     print(f"Refined report generated: {filename}")
 
